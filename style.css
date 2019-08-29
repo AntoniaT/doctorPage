@@ -1,0 +1,33 @@
+body{
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* NAV */
+.nav-white{
+    background-color: antiquewhite;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 20px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    padding: 20px;
+    cursor: pointer;
+}
+.push{
+    margin-right: auto;
+}
