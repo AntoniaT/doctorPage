@@ -5,27 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dr. Stefan Uranitsch</title>
-    <link rel="icon" href="images/Dr. Uranitsch Stefan_Logo Only.png">
+    <link rel="icon" href="images/Logo-Icon-turcoise.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <!-- MAIN NAV -->
         <nav class="nav-white">
             <ul class="main-nav"> 
-                <li class="push"><a href="#"><img src="images/Dr. Uranitsch Stefan_Logo Only.png"></a></li>
+                <li class="push"><a href="#"><img src="images/Logo-Icon-turcoise.png"></a></li>
                 <li><a href="#">Leistungen</a></li>
                 <li><a href="#">Über mich</a></li>
                 <li><a href="#">Ordination</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
+            <li class="openBtn" onclick="openNav()">&#9776;</li>
+
         </nav>
+
+        <!-- MOBILE SIDE NAV -->
+        <div id="mobile-nav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Leistungen</a>
+                <a href="#">Über mich</a>
+                <a href="#">Ordination</a>
+                <a href="#">Kontakt</a>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="cover">
+          <div class="cover-modal">
           <h1>Willkommen</h1>
-          <h2>Dr. Stefan Uranitsch<br>Facharzt für Chirurgie</h2>
-          
+          <p>Dr. Stefan Uranitsch<br>Facharzt für Allgemein- und Viszeralchirurgie</p>
+          <button>TERMIN VEREINBAREN</button>
+          </div>
         </section>
+
+        <section class="leistungen">
+          <div>
+            <h2>Meine Leistungen</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <button>Zu den Leistungen</button>
+          </div>
+          <div class="valueBox">
+           <img src="images/value-icon.png" alt="value1">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. </p>
+          </div>
+
+          <div class="valueBox">
+                <img src="images/value-icon.png" alt="value2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. </p>
+          </div>
+          <div class="valueBox">
+                <img src="images/value-icon.png" alt="value3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. </p>
+          </div>
+        </section>
+
+        <section class="werte">
+          <div>
+                <h2>Meine Werte</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+          <div class="valueBox">
+               <img src="images/value-icon.png" alt="value1">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+    
+              <div class="valueBox">
+                    <img src="images/value-icon.png" alt="value2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+              </div>
+              <div class="valueBox">
+                    <img src="images/value-icon.png" alt="value3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </div>
+        </section>
+
+        <section class="ueberMich">
+          <div>
+              <img src="images/" alt="aboutme">
+              <h2>Über mich</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mi tempus imperdiet nulla malesuada. Faucibus in ornare quam viverra. Non consectetur a erat nam at lectus urna. In ante metus dictum at tempor. Cras ornare arcu dui vivamus arcu felis bibendum. Eget nunc lobortis mattis aliquam. Adipiscing elit ut aliquam purus sit. Nunc congue nisi vitae suscipit tellus mauris a diam. Bibendum enim facilisis gravida neque convallis a cras semper. Purus viverra accumsan in nisl nisi scelerisque. </p>
+              <button>MEHR</button>
+          </div>       
+        </section>
+
+        <section class="ordination">
+          <div class="ordi-modal"> 
+                <img src="images/" alt="location">
+                <h2>Ordination</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div>
+              <img src="images/" alt="ordination innen">
+          </div>
+          <div>
+              <img src="images/" alt="ordination innen">
+          </div>
+        </section>
+
+        <section class="kontakt">
+                <h2>Terminvereinbarung und Anmeldung</h2>
+        </section>
+
+        <section class="anfahrt">
+            <div class="anfahrt-modal">
+                <h2>Anfahrt und Öffnungszeiten</h2> 
+                        <img src="images/" alt="location">
+                        <h2>Anfahrt</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                    <img src="images/" alt="ordination innen">
+            </div>
+        </section>
+
     </main>
+
+<!-- FOOTER -->
+    <footer>
+        <div>
+            <img id="footerLogo" src="images/Logo_White.png">
+        </div>
+        <div>
+          <h2>Impressum</h2>
+          <p>Lore ipsum askjdn simand moled</p>
+        </div>
+        <div>
+          <h2>Kontakt</h2>
+          <p>Hilmteichstraße 134<br>A-8043 Graz<br>Tel.: +43/681-xxxxxxxx<br>mail@mail.com</p>
+        </div>
+    </footer>
+
+    <script src="scripts/navScript.js"></script>
 </body>
 </html>

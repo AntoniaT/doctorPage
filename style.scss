@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+
+$primary-color: #62C2CE;
+$secondary-color: #3c64c2;
+
+$back-color: #fff;
+$light-back-color: #F4F4F4;
+$light-back-color2: #F7FEF8;
+$shadow-color: #1940E5;
+
+/* FONT COLORS*/
+$primary-font-color: #808D9C;
+$secondary-font-color: #000;
+
+$main-font: 'Roboto Condensed', sans-serif;
+
+/* breakpoints for MEDIA QUERIES */
+@mixin for-mobile-only {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-big-desktop {
+    @media (min-width: 1800px) { @content; }
+  }
+
+
+/* mixin function for box shadows */
+@mixin main-box-shadow($x, $y, $blur, $c){ 
+    -webkit-box-shadow: $x, $y, $blur, $c;
+    -moz-box-shadow: $x, $y, $blur, $c;
+    -ms-box-shadow: $x, $y, $blur, $c;
+    box-shadow: $x, $y, $blur, $c;
+  }
+
+body{
+    margin: auto 0;
+    font-family: $main-font;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* NAV */
+.nav-white{
+    background-color: $back-color;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 20px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    @include for-mobile-only{
+        display: none;
+    }
+    @include for-tablet-portrait{
+        font-size: 1em;
+    }
+}
+nav img{
+    width: 50px;
+}
+li{
+    padding: 20px;
+    cursor: pointer;
+}
+.push{
+    margin-right: auto;
+}
+.sidenav{
+    display: none;
+    @include for-mobile-only{
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $primary-color;
+        overflow-x: hidden;
+        transition: 0.5s ease-out;
+        padding-top: 60px;
+        text-align:center;
+    }
+}
+.sidenav a{
+    @include for-mobile-only{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: $back-color;
+        display: block;
+        transition: 0.3s;
+    }
+}
+.sidenav a:hover{
+    color: $secondary-color;
+}
+.sidenav .closebtn {
+    @include for-mobile-only{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+.openBtn{
+    display: none;
+    @include for-mobile-only{
+        display: block;
+        height: 60px;
+        font-size: 40px;
+        cursor: pointer; 
+    }
+}
+
+/* COVER HERO */
+
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $light-back-color;
+}
+
+.cover-modal{
+    background-color: $back-color;
+    width: 40vw;
+    height: 25vh;
+    padding: 50px;
+    @include main-box-shadow(5px, 5px, 30px, $shadow-color);
+}
+/* FOOTER */
+footer{
+    margin: 0;
+    background-color: $primary-color;
+    color: $back-color;
+    padding: 2em;
+    text-align: center;
+    @include for-tablet-landscape{
+        display: flex;
+        justify-content: space-around;    
+    }
+    @include for-desktop{
+        display: flex;
+        justify-content: space-around;    
+    }
+    @include for-big-desktop{
+        display: flex;
+        justify-content: space-around;    
+    }
+}
+#footerLogo{
+    width: 220px;
+    height: auto;
+    @include for-tablet-portrait{
+        width: 250px;
+        height: auto;
+    }
+    @include for-tablet-landscape{
+        margin-top: 15px;
+        width: 250px;
+        height: auto; 
+    }
+    @include for-desktop{
+        margin-top: 15px;
+        width: 300px;
+        height: auto;
+    }
+    @include for-big-desktop{
+        margin-top: 15px;
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* SECTION 1 : Meine Leistungen */
+.leistungen{
+    text-align: center;
+    @include for-tablet-landscape{
+        display: flex;
+        flex-direction: row;
+        margin: 80px;
+    }
+    
+}
+.valueBox{
+    margin: 1em;
+    display: block;
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center;
+     img{
+      width: 50px;
+      height: auto;
+    }
+  }
+/* SECTION 2 : Meine Werte */
+
+.werte{
+    background-color: $secondary-color;
+    color: $back-color;
+    text-align: center;
+    h2{
+        color: $primary-color;
+    }
+    @include for-tablet-portrait{
+        display: flex;
+        flex-direction: row;
+        padding: 80px;
+    }
+    @include for-tablet-landscape{
+        display: flex;
+        flex-direction: row;
+        padding: 80px;
+    }
+}
+
+/* SECTION 3 : Über mich */
+
+.ueberMich{
+    background-color: $light-back-color2;
+    color: #000;
+    padding: 50px;
+    h2, button{
+        color: $primary-color;
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+    @include for-tablet-portrait{
+        display: flex;
+        flex-direction: row;
+        padding: 80px;
+    }
+    @include for-tablet-landscape{
+        padding: 80px;
+     
+    }
+
+}
+/* SECTION 4 : Ordination */
+
+.ordination{
+    background-color: $secondary-color;
+    color: $back-color;
+    padding: 50px;
+    .ordi-modal {
+        background-color: $back-color;
+        color: $secondary-color;
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+}
+/* SECTION 5 : Kontakt */
+
+/* SECTION 6 : Anfahrt und Öffnungszeiten */
+
+.anfahrt{
+    background-color: $light-back-color2;
+    color: #000;
+    padding: 50px;
+    .ordi-modal {
+        background-color: $back-color;
+        color: $secondary-color;
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+}
