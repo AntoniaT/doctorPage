@@ -7,6 +7,7 @@
     <title>Dr. Stefan Uranitsch</title>
     <link rel="icon" href="images/Logo-Icon-turcoise.png">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
                 <li><a href="#">Leistungen</a></li>
                 <li><a href="#">Über mich</a></li>
                 <li><a href="#">Ordination</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a class="contactNavBtn" href="#">Kontakt</a></li>
             </ul>
             <li class="openBtn" onclick="openNav()">&#9776;</li>
 
@@ -42,23 +43,44 @@
         </section>
 
         <section class="leistungen">
-          <div>
+          <div class="valueBox1">
             <h2>Meine Leistungen</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             <button>Zu den Leistungen</button>
           </div>
-          <div class="valueBox">
-           <img src="images/value-icon.png" alt="value1">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. </p>
-          </div>
-
-          <div class="valueBox">
-                <img src="images/value-icon.png" alt="value2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. </p>
-          </div>
-          <div class="valueBox">
-                <img src="images/value-icon.png" alt="value3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. </p>
+          <div class="valueBox2">
+              <div>
+              <h3>Leistungen im Überblick</h3>
+                <ul><strong>Endoskopie – Magen/Darmspiegelung:</strong>
+                    <li>Gastroskopie (Magenspiegelung)</li>
+                    <li>Koloskopie (Darmspiegelung)</li>
+                </ul>
+                <ul><strong>Operative Behandlungen:</strong>
+                    <li>Mammachirurgie / Senologie / Brustkrebs / männliche Gynäkomastie</li>
+                    <li>Leistenbruch</li>
+                    <li>Nabelbruch</li>
+                    <li>Narbenbruch/Bauchwandhernie</li>
+                    <li>Gallenblase</li>
+                    <li>Schilddrüse - Erkrankungen der Schilddrüse/Nebenschilddrüse</li>
+                </ul>
+              </div>
+              <div>
+                <ul><strong>Handchirurgie:</strong>
+                    <li>Karpaltunnelsyndrom (CTS)</li>
+                    <li>Venen/Krampfadern</li>
+                    <li>Appendizitis/Blinddarmbeschwerden</li>
+                    <li>Darmchirurgie /Rektumchirurgie</li>
+                    <li>Divertikulitis</li>
+                </ul>
+                <ul><strong>Proktologische/Enddarmbeschwerden:</strong>
+                    <li>Akute/chronische Analfissur</li>
+                    <li>Fisteln/Abszeße/Perianalvenenthrombose</li>
+                </ul>
+                <ul><strong>Haut und Weichteile:</strong>
+                    <li>Pilonidalsinus/Steißbeinfistel/Sakraldermoid</li>
+                    <li>Talggeschwulst(Atherome)</li>
+                </ul>
+              </div>
           </div>
         </section>
 
@@ -84,7 +106,10 @@
 
         <section class="ueberMich">
           <div>
-              <img src="images/" alt="aboutme">
+              <!--Getty Images Copyright-->
+              <img src="images/stefan-stock.jpg" alt="aboutme">
+          </div>
+          <div>
               <h2>Über mich</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mi tempus imperdiet nulla malesuada. Faucibus in ornare quam viverra. Non consectetur a erat nam at lectus urna. In ante metus dictum at tempor. Cras ornare arcu dui vivamus arcu felis bibendum. Eget nunc lobortis mattis aliquam. Adipiscing elit ut aliquam purus sit. Nunc congue nisi vitae suscipit tellus mauris a diam. Bibendum enim facilisis gravida neque convallis a cras semper. Purus viverra accumsan in nisl nisi scelerisque. </p>
               <button>MEHR</button>
@@ -92,21 +117,60 @@
         </section>
 
         <section class="ordination">
-          <div class="ordi-modal"> 
-                <img src="images/" alt="location">
+            <div class="blueCont"></div>
+            <div class="ordiCont"> 
                 <h2>Ordination</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
-          <div>
-              <img src="images/" alt="ordination innen">
-          </div>
-          <div>
-              <img src="images/" alt="ordination innen">
-          </div>
+                <img class="ordiCardImg" src="images/ordination-aussen2.png" alt="location">
+            </div>
+            <div class="ordiCont2">
+                <img src="images/ordination-aussen.png" alt="ordination außen">
+                              <!--Getty Images Copyright-->
+                <img src="images/stock-photo.jpg" alt="ordination innen">
+            </div>
+            <div>
+                <img src="images/" alt="ordination innen">
+            </div>
+
         </section>
 
         <section class="kontakt">
-                <h2>Terminvereinbarung und Anmeldung</h2>
+                <h2>Kontakt und Anmeldung</h2>
+                <p>Termine <strong>Montags</strong>, nur nach Vereinbarung.</p>
+                <p>Sie können mich gerne telefonisch unter<strong> 0664/980769</strong> oder über Emailanfrage erreichen:</p>
+                <input type="submit" value="ANFRAGEN">
+
+            <!--    <form>
+                    <h3>Kontaktanfrage</h3>
+                    <label>Betreff*
+                        <input type="text" name="betreff" required>
+                    </label><br>
+                    <label>Vorname*
+                        <input type="text" name="vorname">
+                    </label><br>
+                    <label>Nachname*
+                        <input type="text" name="nachname"required>
+                    </label><br>
+                    <label>Email
+                        <input type="email" name="email">
+                    </label><br>
+                    <label>Telefonnummer*
+                        <input type="text" name="telefon" required>
+                    </label><br>
+                    <label>Wunschtermin
+                        <input type="text" name="wunschtermin">
+                    </label><br>
+                    <label>Ihre Nachricht an mich:
+                        <input type="text" name="nachricht">
+                    </label><br>
+                    <label>Pflichtfelder sind mit * gekennzeichnet.</label><br>
+                    <label>
+                        <input type="checkbox" name="datenschutz">
+                        Ja, ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden.
+                    </label>
+                        <input type="submit" value="ANFRAGEN">
+                    
+                </form>-->
         </section>
 
         <section class="anfahrt">
