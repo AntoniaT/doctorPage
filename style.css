@@ -3,18 +3,33 @@
 /* FONT COLORS*/
 /* SHADOWS */
 /* MARGIN FOR SECTIONS */
+/* CTA BUTTONS*/
 /* breakpoints for MEDIA QUERIES */
 /* mixin function for box shadows */
 body {
   margin: auto 0;
   font-family: "Roboto Condensed", sans-serif;
   color: #808D9C;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
   color: #808D9C;
   font-size: 1.5em;
+}
+
+.ctaBtn {
+  background-color: #62C2CE;
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.ctaBtn:hover {
+  filter: brightness(0.9);
 }
 
 /* NAV */
@@ -52,6 +67,10 @@ a {
   border: 2px solid #62C2CE;
   padding: 5px 20px;
   color: #62C2CE;
+}
+.main-nav .contactNavBtn:hover {
+  background-color: #62C2CE;
+  color: #fff;
 }
 
 nav img {
@@ -134,15 +153,22 @@ nav img {
 }
 
 .cover-modal {
+  text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   width: 40vw;
-  height: 25vh;
+  height: auto;
   padding: 50px;
   -webkit-box-shadow: 5px, 5px, 30px, #1940E5;
   -moz-box-shadow: 5px, 5px, 30px, #1940E5;
   -ms-box-shadow: 5px, 5px, 30px, #1940E5;
   box-shadow: 5px, 5px, 30px, #1940E5;
+}
+.cover-modal h1 {
+  font-size: 1.8em;
+}
+.cover-modal p {
+  font-size: 1.3em;
 }
 
 /* FOOTER */
@@ -205,53 +231,55 @@ footer {
 }
 
 /* SECTION 1 : Meine Leistungen */
-.leistungen {
+#leistungen {
   display: flex;
   text-align: center;
+  padding-top: 160px;
+  background-color: #F4F4F4;
 }
 @media (min-width: 900px) {
-  .leistungen {
+  #leistungen {
     display: flex;
     flex-direction: row;
   }
 }
-.leistungen li {
+#leistungen li {
   list-style: none;
 }
-.leistungen .valueBox1 {
+#leistungen .valueBox1 {
+  background-color: #fff;
   width: 40vw;
   padding: 2em;
 }
-.leistungen .valueBox2 {
+#leistungen .valueBox2 {
   padding: 2em;
   display: flex;
   width: 60vw;
-  background-color: #F4F4F4;
   text-align: left;
 }
-.leistungen .valueBox2 img {
+#leistungen .valueBox2 img {
   width: 50px;
   height: auto;
 }
 
 /* SECTION 2 : Meine Werte */
-.werte {
+#werte {
   background-color: #3c64c2;
   color: #fff;
   text-align: center;
 }
-.werte h2 {
+#werte h2 {
   color: #62C2CE;
 }
 @media (min-width: 600px) {
-  .werte {
+  #werte {
     display: flex;
     flex-direction: row;
     padding: 80px;
   }
 }
 @media (min-width: 900px) {
-  .werte {
+  #werte {
     display: flex;
     flex-direction: row;
     padding: 80px;
@@ -259,45 +287,55 @@ footer {
 }
 
 /* SECTION 3 : Über mich */
-.ueberMich {
+#ueberMich {
   background-color: #fff;
-  color: #000;
-  padding: 50px;
+  padding-top: 50px;
+  position: relative;
+  margin-bottom: 5em;
 }
-.ueberMich h2, .ueberMich button {
+#ueberMich .greyCont {
+  display: flex;
+  background-color: #F4F4F4;
+  width: 90vw;
+  height: 400px;
+}
+#ueberMich h2 {
   color: #62C2CE;
   text-align: center;
-  margin: auto;
-  display: block;
+  justify-self: flex-end;
 }
-@media (min-width: 600px) {
-  .ueberMich {
-    display: flex;
-    flex-direction: row;
-    padding: 80px;
-  }
+#ueberMich p {
+  width: 40vw;
+  padding: 3em;
 }
-@media (min-width: 900px) {
-  .ueberMich {
-    padding: 80px;
-  }
+#ueberMich img {
+  z-index: 3;
+  width: 30vw;
+  height: auto;
+  justify-self: flex-start;
 }
-
 /* SECTION 4 : Ordination */
-.ordination {
+#ordination {
   margin: 5em 1em;
   color: #fff;
   padding: 50px;
   height: 700px;
+  position: relative;
 }
-.ordination .blueCont {
+
+.blueCont {
   background-color: #3c64c2;
   width: 55vw;
   height: 500px;
   position: absolute;
   right: 0;
+  z-index: -1;
 }
-.ordination .ordiCont {
+
+.ordiCont {
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
   margin-top: -50px;
   background-color: #fff;
   color: #3c64c2;
@@ -305,31 +343,35 @@ footer {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
-  padding: 1em;
-  background-color: #fff;
-  z-index: 1;
+  width: 500px;
   height: 200px;
-  width: 40vw;
 }
-.ordination .ordiCont h2 {
+.ordiCont .ordiDetailsCont {
+  justify-self: flex-start;
+  width: 200px;
+}
+.ordiCont .ordiDetailsCont h2 {
+  margin: 1em;
   font-weight: normal;
 }
-.ordination .ordiCont p {
+.ordiCont .ordiDetailsCont p {
+  margin: 1em;
   color: #808D9C;
 }
-.ordination .ordiCont .ordiCardImg {
-  float: right;
-  height: 15vw;
+.ordiCont .ordiCardImg {
+  justify-self: flex-end;
+  height: 200px;
   width: auto;
   z-index: 5;
 }
-.ordination .ordiCont2 {
+
+.ordiCont2 {
   display: flex;
   margin: 20px;
   margin-left: 8em;
   z-index: 3;
 }
-.ordination .ordiCont2 img {
+.ordiCont2 img {
   height: 200px;
   width: auto;
   z-index: 3;
@@ -337,19 +379,19 @@ footer {
 }
 
 /* SECTION 5 : Kontakt */
-.kontakt {
+#kontakt {
   padding: 5em 1em;
   background-color: #F4F4F4;
   text-align: center;
 }
 
 /* SECTION 6 : Anfahrt und Öffnungszeiten */
-.anfahrt {
+#anfahrt {
   background-color: #F7FEF8;
   color: #000;
   padding: 50px;
 }
-.anfahrt .ordi-modal {
+#anfahrt .ordi-modal {
   background-color: #fff;
   color: #3c64c2;
   text-align: center;

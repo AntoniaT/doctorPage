@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr. Stefan Uranitsch</title>
+    <link rel="icon" href="images/Logo-Icon-turcoise.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <!-- MAIN NAV -->
+        <nav class="nav-white">
+            <ul class="main-nav"> 
+                <li class="push"><a href="index.html"><img src="images/Logo-Icon-turcoise.png"></a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="index.html#uebermich">Über mich</a></li>
+                <li><a href="#">Ordination</a></li>
+                <li><a class="contactNavBtn contactBtn" href="#">Kontakt</a></li>
+            </ul>
+            <li class="openBtn" onclick="openNav()">&#9776;</li>
+
+        </nav>
+
+        <!-- MOBILE SIDE NAV -->
+        <div id="mobile-nav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Leistungen</a>
+                <a href="#">Über mich</a>
+                <a href="#">Ordination</a>
+                <a href="#">Kontakt</a>
+        </div>
+    </header>
+    <main>
+        <section id="leistungen">
+          <div class="valueBox1">
+            <h2>Meine Leistungen</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <button class="leistungenBtn">Zu den Leistungen</button>
+          </div>
+          <div class="valueBox2">
+              <div>
+              <h3>Meine Leistungen im Einzelnen:</h3>
+                <ul><strong>Endoskopie – Magen/Darmspiegelung:</strong>
+                    <li>Gastroskopie (Magenspiegelung)</li>
+                    <li>Koloskopie (Darmspiegelung)</li>
+                </ul>
+                <ul><strong>Operative Behandlungen:</strong>
+                    <li>Mammachirurgie / Senologie / Brustkrebs / männliche Gynäkomastie</li>
+                    <li>Leistenbruch</li>
+                    <li>Nabelbruch</li>
+                    <li>Narbenbruch/Bauchwandhernie</li>
+                    <li>Gallenblase</li>
+                    <li>Schilddrüse - Erkrankungen der Schilddrüse/Nebenschilddrüse</li>
+                </ul>
+              </div>
+              <div>
+                <ul><strong>Handchirurgie:</strong>
+                    <li>Karpaltunnelsyndrom (CTS)</li>
+                    <li>Venen/Krampfadern</li>
+                    <li>Appendizitis/Blinddarmbeschwerden</li>
+                    <li>Darmchirurgie /Rektumchirurgie</li>
+                    <li>Divertikulitis</li>
+                </ul>
+                <ul><strong>Proktologische/Enddarmbeschwerden:</strong>
+                    <li>Akute/chronische Analfissur</li>
+                    <li>Fisteln/Abszeße/Perianalvenenthrombose</li>
+                </ul>
+                <ul><strong>Haut und Weichteile:</strong>
+                    <li>Pilonidalsinus/Steißbeinfistel/Sakraldermoid</li>
+                    <li>Talggeschwulst(Atherome)</li>
+                </ul>
+              </div>
+          </div>
+        </section>
+        <section>
+            <div id="parent"></div>
+                <template id="myTemplate">
+                    <h1 class="leistungTitle">TITLE</h1>
+                    <p class="leistungCopy">COPY</p>
+                </template>
+            
+        </section>
+    </main>
+
+<!-- FOOTER -->
+    <footer>
+        <div>
+            <img id="footerLogo" src="images/Logo_White.png">
+        </div>
+        <div>
+          <h2>Impressum</h2>
+          <p>Lore ipsum askjdn simand moled</p>
+        </div>
+        <div>
+          <h2>Kontakt</h2>
+          <p>Hilmteichstraße 134<br>A-8043 Graz<br>Tel.: +43 664 3817760<br>office@dr-uranitsch.at</p>
+        </div>
+    </footer>
+
+    <script src="scripts/navScript.js"></script>
+    <script src="scripts/index.js" type="module"></script>
+    <script src="scripts/texte.js" type="module"></script>
+    <script src="scripts/leistungen.js" type="module"></script>
+
+
+
+</body>
+</html>

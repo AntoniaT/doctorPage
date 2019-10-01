@@ -20,6 +20,12 @@ $shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 /* MARGIN FOR SECTIONS */
 $section-margin: 5em 1em;
 
+/* CTA BUTTONS*/
+$ctaColor: $primary-color;
+$ctaPadding: 8px 20px;
+$ctaSize: 1.2em;
+$ctaBorder: none;
+
 /* breakpoints for MEDIA QUERIES */
 @mixin for-mobile-only {
     @media (max-width: 599px) { @content; }
@@ -50,6 +56,7 @@ body{
     margin: auto 0;
     font-family: $main-font;
     color: $primary-font-color;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -57,7 +64,17 @@ a{
     color: $primary-font-color;
     font-size: 1.5em;
 }
-
+.ctaBtn{
+    background-color: $ctaColor;
+    padding: $ctaPadding;
+    color: $back-color;
+    font-size: $ctaSize;
+    border: $ctaBorder;
+    box-shadow: $shadow;
+}
+.ctaBtn:hover{
+    filter: brightness(0.9);
+}
 /* NAV */
 .nav-white{
     background-color: $back-color;
@@ -87,6 +104,10 @@ a{
         border: 2px solid $primary-color;
         padding: 5px 20px;
         color: $primary-color;
+    }
+    .contactNavBtn:hover{
+        background-color: $primary-color;
+        color: $back-color;
     }
 }
 nav img{
@@ -159,12 +180,19 @@ nav img{
 }
 
 .cover-modal{
+    text-align: center;
     box-shadow: $shadow;
     background-color: $back-color;
     width: 40vw;
-    height: 25vh;
+    height: auto;
     padding: 50px;
     @include main-box-shadow(5px, 5px, 30px, $shadow-color);
+    h1{
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 1.3em;
+    }
 }
 /* FOOTER */
 footer{
@@ -211,9 +239,12 @@ footer{
 }
 
 /* SECTION 1 : Meine Leistungen */
-.leistungen{
+#leistungen{
     display: flex;
     text-align: center;
+    padding-top: 160px;
+    background-color: $grey-back-color;
+
     @include for-tablet-landscape{
         display: flex;
         flex-direction: row;
@@ -222,6 +253,7 @@ footer{
         list-style: none;
     }
     .valueBox1{
+        background-color: $back-color;
         width: 40vw;
         padding: 2em;
     }
@@ -229,7 +261,6 @@ footer{
         padding: 2em;
         display: flex;
         width: 60vw;
-        background-color: $grey-back-color;
         text-align: left;
          img{
           width: 50px;
@@ -241,7 +272,7 @@ footer{
   }
 /* SECTION 2 : Meine Werte */
 
-.werte{
+#werte{
     background-color: $secondary-color;
     color: $back-color;
     text-align: center;
@@ -262,42 +293,63 @@ footer{
 
 /* SECTION 3 : Über mich */
 
-.ueberMich{
+#ueberMich{
     background-color: $back-color;
-    color: #000;
-    padding: 50px;
-    h2, button{
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 5em;
+    .greyCont{
+        display: flex;
+        background-color: $grey-back-color;
+        width: 90vw;
+        height: 400px;
+    }
+    h2{
         color: $primary-color;
         text-align: center;
-        margin: auto;
-        display: block;
+        justify-self: flex-end;
+
     }
+    p{
+        width: 40vw;
+        padding: 3em;
+    }
+    img{
+        z-index: 3;
+        width: 30vw;
+        height: auto;
+        justify-self: flex-start;
+    }
+
     @include for-tablet-portrait{
-        display: flex;
-        flex-direction: row;
-        padding: 80px;
+
     }
     @include for-tablet-landscape{
-        padding: 80px;
      
     }
 
 }
 /* SECTION 4 : Ordination */
 
-.ordination{
+#ordination{
     margin: $section-margin;
     color: $back-color;
     padding: 50px;
     height: 700px;
+    position: relative;
+}
     .blueCont{
         background-color: $secondary-color;
         width: 55vw;
         height: 500px;
         position: absolute;
         right: 0;
+        z-index: -1;
     }
     .ordiCont{
+        display: flex;
+        flex-direction: row;
+        z-index: 3;
         margin-top: -50px;
         background-color: $back-color;
         color: $secondary-color;
@@ -305,20 +357,23 @@ footer{
         box-shadow: $shadow;
         margin-left: auto;
         margin-right: auto;
-        padding: 1em;
-        background-color: $back-color;
-        z-index: 1;
+        width: 500px;
         height: 200px;
-        width: 40vw;
-        h2{
-            font-weight: normal;
-        }
-        p{
-            color: $primary-font-color;
+        .ordiDetailsCont{
+         justify-self: flex-start;
+         width: 200px;
+            h2{
+                margin: 1em;
+                font-weight: normal;
+            }
+            p{
+                margin: 1em;
+                color: $primary-font-color;
+            }
         }
         .ordiCardImg{
-            float: right;
-            height: 15vw;
+            justify-self: flex-end;
+            height: 200px;
             width: auto;
             z-index: 5;
         }
@@ -336,17 +391,17 @@ footer{
             margin: 10px;
         }
     }
-}
+
 
 /* SECTION 5 : Kontakt */
-.kontakt{
+#kontakt{
     padding: $section-margin;
     background-color: $grey-back-color;
     text-align: center;
 }
 /* SECTION 6 : Anfahrt und Öffnungszeiten */
 
-.anfahrt{
+#anfahrt{
     background-color: $light-back-color2;
     color: #000;
     padding: 50px;

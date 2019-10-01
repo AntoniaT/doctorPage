@@ -14,11 +14,11 @@
         <!-- MAIN NAV -->
         <nav class="nav-white">
             <ul class="main-nav"> 
-                <li class="push"><a href="#"><img src="images/Logo-Icon-turcoise.png"></a></li>
-                <li><a href="#">Leistungen</a></li>
-                <li><a href="#">Über mich</a></li>
-                <li><a href="#">Ordination</a></li>
-                <li><a class="contactNavBtn" href="#">Kontakt</a></li>
+                <li class="push"><a href="index.html"><img src="images/Logo-Icon-turcoise.png"></a></li>
+                <li><a href="#leistungen">Leistungen</a></li>
+                <li><a href="#uebermich">Über mich</a></li>
+                <li><a href="#ordination">Ordination</a></li>
+                <li><a class="contactNavBtn contactBtn" href="#kontakt">Kontakt</a></li>
             </ul>
             <li class="openBtn" onclick="openNav()">&#9776;</li>
 
@@ -27,7 +27,7 @@
         <!-- MOBILE SIDE NAV -->
         <div id="mobile-nav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Leistungen</a>
+                <a href="#leistungen">Leistungen</a>
                 <a href="#">Über mich</a>
                 <a href="#">Ordination</a>
                 <a href="#">Kontakt</a>
@@ -38,15 +38,15 @@
           <div class="cover-modal">
           <h1>Willkommen</h1>
           <p>Dr. Stefan Uranitsch<br>Facharzt für Allgemein- und Viszeralchirurgie</p>
-          <button>TERMIN VEREINBAREN</button>
+          <button class="contactBtn ctaBtn">TERMIN VEREINBAREN</button>
           </div>
         </section>
 
-        <section class="leistungen">
+        <section id="leistungen" class="leistungen">
           <div class="valueBox1">
             <h2>Meine Leistungen</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            <button>Zu den Leistungen</button>
+            <button class="leistungenBtn">Zu den Leistungen</button>
           </div>
           <div class="valueBox2">
               <div>
@@ -84,7 +84,7 @@
           </div>
         </section>
 
-        <section class="werte">
+        <section id="werte">
           <div>
                 <h2>Meine Werte</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
@@ -104,23 +104,27 @@
               </div>
         </section>
 
-        <section class="ueberMich">
-          <div>
-              <!--Getty Images Copyright-->
-              <img src="images/stefan-stock.jpg" alt="aboutme">
-          </div>
-          <div>
-              <h2>Über mich</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mi tempus imperdiet nulla malesuada. Faucibus in ornare quam viverra. Non consectetur a erat nam at lectus urna. In ante metus dictum at tempor. Cras ornare arcu dui vivamus arcu felis bibendum. Eget nunc lobortis mattis aliquam. Adipiscing elit ut aliquam purus sit. Nunc congue nisi vitae suscipit tellus mauris a diam. Bibendum enim facilisis gravida neque convallis a cras semper. Purus viverra accumsan in nisl nisi scelerisque. </p>
-              <button>MEHR</button>
+        <section id="ueberMich">
+
+          <div class="greyCont">
+              <div>
+                    <h2>Über mich</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mi tempus imperdiet nulla malesuada. Faucibus in ornare quam viverra. Non consectetur a erat nam at lectus urna. In ante metus dictum at tempor. Cras ornare arcu dui vivamus arcu felis bibendum. Eget nunc lobortis mattis aliquam. Adipiscing elit ut aliquam purus sit. Nunc congue nisi vitae suscipit tellus mauris a diam. Bibendum enim facilisis gravida neque convallis a cras semper. Purus viverra accumsan in nisl nisi scelerisque. </p>
+              </div>
+              <div>
+                <!--Getty Images Copyright-->
+                <img src="images/stefan-stock.jpg" alt="aboutme">
+              </div>
           </div>       
         </section>
 
-        <section class="ordination">
+        <section id="ordination">
             <div class="blueCont"></div>
             <div class="ordiCont"> 
-                <h2>Ordination</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <div class="ordiDetailsCont">
+                    <h2>Ordination</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              </div>
                 <img class="ordiCardImg" src="images/ordination-aussen2.png" alt="location">
             </div>
             <div class="ordiCont2">
@@ -134,11 +138,11 @@
 
         </section>
 
-        <section class="kontakt">
+        <section id="kontakt">
                 <h2>Kontakt und Anmeldung</h2>
                 <p>Termine <strong>Montags</strong>, nur nach Vereinbarung.</p>
                 <p>Sie können mich gerne telefonisch unter<strong> 0664/980769</strong> oder über Emailanfrage erreichen:</p>
-                <input type="submit" value="ANFRAGEN">
+                <a href="mailto:office@dr-uranitsch.at">ANFRAGEN</a>
 
             <!--    <form>
                     <h3>Kontaktanfrage</h3>
@@ -173,7 +177,7 @@
                 </form>-->
         </section>
 
-        <section class="anfahrt">
+        <section id="anfahrt">
             <div class="anfahrt-modal">
                 <h2>Anfahrt und Öffnungszeiten</h2> 
                         <img src="images/" alt="location">
@@ -198,10 +202,14 @@
         </div>
         <div>
           <h2>Kontakt</h2>
-          <p>Hilmteichstraße 134<br>A-8043 Graz<br>Tel.: +43/681-xxxxxxxx<br>mail@mail.com</p>
+          <p>Hilmteichstraße 134<br>A-8043 Graz<br>Tel.: +43 664 3817760<br>office@dr-uranitsch.at</p>
         </div>
     </footer>
 
     <script src="scripts/navScript.js"></script>
+    <script src="scripts/index.js" type="module"></script>
+    <script src="scripts/texte.js" type="module"></script>
+
+
 </body>
 </html>
