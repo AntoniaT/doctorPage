@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap");
 /* FONT COLORS*/
+/* FONT DETAILS */
 /* SHADOWS */
 /* MARGIN FOR SECTIONS */
-/* CTA BUTTONS*/
+/* CTA and Secondary BUTTONS*/
 /* breakpoints for MEDIA QUERIES */
 /* mixin function for box shadows */
 body {
@@ -17,6 +18,30 @@ a {
   text-decoration: none;
   color: #808D9C;
   font-size: 1.5em;
+  position: relative;
+  padding: 8px 0px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* STYLE THE HOVER ANIMATION FOR NAV BAR*/
+.main-nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #62C2CE;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.main-nav a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .ctaBtn {
@@ -173,7 +198,9 @@ nav img {
 
 /* FOOTER */
 footer {
+  bottom: 0;
   margin: 0;
+  position: relative;
   background-color: #62C2CE;
   color: #fff;
   padding: 2em;
@@ -237,6 +264,15 @@ footer {
   padding-top: 160px;
   background-color: #F4F4F4;
 }
+#leistungen .leistungenBtn {
+  padding: 8px 20px;
+  background-color: #3c64c2;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 @media (min-width: 900px) {
   #leistungen {
     display: flex;
@@ -246,20 +282,23 @@ footer {
 #leistungen li {
   list-style: none;
 }
-#leistungen .valueBox1 {
+#leistungen .serviceBox1 {
   background-color: #fff;
   width: 40vw;
   padding: 2em;
 }
-#leistungen .valueBox2 {
+#leistungen .serviceBox2 {
   padding: 2em;
   display: flex;
   width: 60vw;
   text-align: left;
 }
-#leistungen .valueBox2 img {
+#leistungen .serviceBox2 img {
   width: 50px;
   height: auto;
+}
+#leistungen .serviceBox2 h3 {
+  color: #3c64c2;
 }
 
 /* SECTION 2 : Meine Werte */
@@ -270,20 +309,39 @@ footer {
 }
 #werte h2 {
   color: #62C2CE;
+  padding: 40px 0px 0px 0px;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+#werte .valueCont {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 40px 80px 40px;
+  justify-content: center;
 }
 @media (min-width: 600px) {
-  #werte {
+  #werte .valueCont {
     display: flex;
     flex-direction: row;
-    padding: 80px;
   }
 }
 @media (min-width: 900px) {
-  #werte {
+  #werte .valueCont {
     display: flex;
     flex-direction: row;
-    padding: 80px;
   }
+}
+@media (max-width: 599px) {
+  #werte .valueCont {
+    display: block;
+  }
+}
+#werte .valueCont img {
+  width: 50px;
+  height: auto;
+}
+#werte .valueCont .valueBox {
+  margin: 0 2em 0 2em;
 }
 
 /* SECTION 3 : Über mich */
@@ -303,6 +361,8 @@ footer {
   color: #62C2CE;
   text-align: center;
   justify-self: flex-end;
+  font-size: 1.8em;
+  font-weight: normal;
 }
 #ueberMich p {
   width: 40vw;
@@ -319,7 +379,6 @@ footer {
   margin: 5em 1em;
   color: #fff;
   padding: 50px;
-  height: 700px;
   position: relative;
 }
 
@@ -383,20 +442,67 @@ footer {
   padding: 5em 1em;
   background-color: #F4F4F4;
   text-align: center;
+  height: 400px;
+}
+#kontakt .contactPhone {
+  margin-bottom: 50px;
+}
+#kontakt h2 {
+  font-size: 1.8em;
+  font-weight: normal;
+  color: #62C2CE;
 }
 
 /* SECTION 6 : Anfahrt und Öffnungszeiten */
 #anfahrt {
-  background-color: #F7FEF8;
-  color: #000;
   padding: 50px;
+  position: relative;
 }
-#anfahrt .ordi-modal {
+#anfahrt h2 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.8em;
+  margin-left: 2em;
+}
+#anfahrt .anfahrt-modal {
   background-color: #fff;
   color: #3c64c2;
   text-align: center;
-  margin: auto;
+  display: flex;
+  width: 700px;
+  height: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 7em;
+  margin-left: 6em;
+}
+#anfahrt .anfahrt-modal img {
+  width: auto;
+  height: 300px;
+  justify-self: flex-end;
+}
+#anfahrt .anfahrt-modal .anfahrtDetailsCont {
+  margin-right: 3em;
+  padding: 1em;
+}
+#anfahrt .hoursCont {
+  background-color: #F4F4F4;
+  width: 300px;
+  height: 100px;
   display: block;
+  margin: auto;
+  padding: 0.5em;
+  text-align: center;
+  z-index: 3;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#anfahrt .blueCont2 {
+  background-color: #3c64c2;
+  width: 55vw;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  margin-bottom: 4em;
 }
 
 /*# sourceMappingURL=style.css.map */

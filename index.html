@@ -18,7 +18,7 @@
                 <li><a href="#leistungen">Leistungen</a></li>
                 <li><a href="#uebermich">Über mich</a></li>
                 <li><a href="#ordination">Ordination</a></li>
-                <li><a class="contactNavBtn contactBtn" href="#kontakt">Kontakt</a></li>
+                <li><a class="contactNavBtn" href="#kontakt">Kontakt</a></li>
             </ul>
             <li class="openBtn" onclick="openNav()">&#9776;</li>
 
@@ -37,20 +37,20 @@
         <section class="cover">
           <div class="cover-modal">
           <h1>Willkommen</h1>
-          <p>Dr. Stefan Uranitsch<br>Facharzt für Allgemein- und Viszeralchirurgie</p>
+          <p><strong>Dr. Stefan Uranitsch</strong><br>Facharzt für Allgemein- und Viszeralchirurgie</p>
           <button class="contactBtn ctaBtn">TERMIN VEREINBAREN</button>
           </div>
         </section>
 
         <section id="leistungen" class="leistungen">
-          <div class="valueBox1">
+          <div class="serviceBox1">
             <h2>Meine Leistungen</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            <button class="leistungenBtn">Zu den Leistungen</button>
+            <button class="leistungenBtn">ZU DEN LEISTUNGEN</button>
           </div>
-          <div class="valueBox2">
+          <div class="serviceBox2">
               <div>
-              <h3>Leistungen im Überblick</h3>
+              <h3>Meine Leistungen im Überblick</h3>
                 <ul><strong>Endoskopie – Magen/Darmspiegelung:</strong>
                     <li>Gastroskopie (Magenspiegelung)</li>
                     <li>Koloskopie (Darmspiegelung)</li>
@@ -87,21 +87,22 @@
         <section id="werte">
           <div>
                 <h2>Meine Werte</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
           </div>
+          <div class="valueCont">
           <div class="valueBox">
-               <img src="images/value-icon.png" alt="value1">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               <img src="images/value-icon1.png" alt="value1">
+               <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
               </div>
     
               <div class="valueBox">
-                    <img src="images/value-icon.png" alt="value2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                    <img src="images/value-icon1.png" alt="value2">
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do.</p>
               </div>
               <div class="valueBox">
-                    <img src="images/value-icon.png" alt="value3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    <img src="images/value-icon1.png" alt="value3">
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod.</p>
               </div>
+            </div>
         </section>
 
         <section id="ueberMich">
@@ -141,8 +142,8 @@
         <section id="kontakt">
                 <h2>Kontakt und Anmeldung</h2>
                 <p>Termine <strong>Montags</strong>, nur nach Vereinbarung.</p>
-                <p>Sie können mich gerne telefonisch unter<strong> 0664/980769</strong> oder über Emailanfrage erreichen:</p>
-                <a href="mailto:office@dr-uranitsch.at">ANFRAGEN</a>
+                <p class="contactPhone">Sie können mich gerne telefonisch unter<strong> 0664/980769</strong> oder über Emailanfrage erreichen:</p>
+                <a class="ctaBtn contactBtn" href="mailto:office@dr-uranitsch.at">ANFRAGEN</a>
 
             <!--    <form>
                     <h3>Kontaktanfrage</h3>
@@ -178,14 +179,19 @@
         </section>
 
         <section id="anfahrt">
-            <div class="anfahrt-modal">
-                <h2>Anfahrt und Öffnungszeiten</h2> 
-                        <img src="images/" alt="location">
-                        <h2>Anfahrt</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="blueCont2">
+                    <h2>Anfahrt und Öffnungszeiten</h2> 
             </div>
-            <div>
-                    <img src="images/" alt="ordination innen">
+            <div class="anfahrt-modal">
+                <div class="anfahrtDetailsCont">
+                    <h3>Anfahrt</h3>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, <br>sed do eiusmod tempor.</p>
+                </div>
+                <img src="images/map.png" alt="location">
+            </div>
+            <div class="hoursCont">
+                    <h3>Öffnungszeiten:</h3>
+                    <p>Montags 9-17 Uhr</p>
             </div>
         </section>
 

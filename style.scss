@@ -13,18 +13,21 @@ $shadow-color: #1940E5;
 $primary-font-color: #808D9C;
 $secondary-font-color: #000;
 
+/* FONT DETAILS */
 $main-font: 'Roboto Condensed', sans-serif;
+$headerSize: 1.8em;
 
 /* SHADOWS */
 $shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 /* MARGIN FOR SECTIONS */
 $section-margin: 5em 1em;
 
-/* CTA BUTTONS*/
+/* CTA and Secondary BUTTONS*/
 $ctaColor: $primary-color;
 $ctaPadding: 8px 20px;
 $ctaSize: 1.2em;
 $ctaBorder: none;
+$secBtn: 1em;
 
 /* breakpoints for MEDIA QUERIES */
 @mixin for-mobile-only {
@@ -63,6 +66,30 @@ a{
     text-decoration: none;
     color: $primary-font-color;
     font-size: 1.5em;
+    position: relative;
+    padding: 8px 0px;
+}
+p{
+    font-size: 1.2em;
+}
+/* STYLE THE HOVER ANIMATION FOR NAV BAR*/
+.main-nav{
+    a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $primary-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 }
 .ctaBtn{
     background-color: $ctaColor;
@@ -196,7 +223,9 @@ nav img{
 }
 /* FOOTER */
 footer{
+    bottom: 0;
     margin: 0;
+    position: relative;
     background-color: $primary-color;
     color: $back-color;
     padding: 2em;
@@ -244,7 +273,15 @@ footer{
     text-align: center;
     padding-top: 160px;
     background-color: $grey-back-color;
-
+    .leistungenBtn{
+        padding: $ctaPadding;
+        background-color: $secondary-color;
+        color: $back-color;
+        font-size: $secBtn;
+        border: $ctaBorder;
+        box-shadow: $shadow;
+        cursor: pointer;
+    }
     @include for-tablet-landscape{
         display: flex;
         flex-direction: row;
@@ -252,12 +289,12 @@ footer{
     li{
         list-style: none;
     }
-    .valueBox1{
+    .serviceBox1{
         background-color: $back-color;
         width: 40vw;
         padding: 2em;
     }
-    .valueBox2{
+    .serviceBox2{
         padding: 2em;
         display: flex;
         width: 60vw;
@@ -265,6 +302,9 @@ footer{
          img{
           width: 50px;
           height: auto;
+        }
+        h3{
+          color: $secondary-color;
         }
     
 }
@@ -278,16 +318,33 @@ footer{
     text-align: center;
     h2{
         color: $primary-color;
+        padding: 40px 0px 0px 0px;
+        font-size: $headerSize;
+        font-weight: normal;
     }
-    @include for-tablet-portrait{
+    .valueCont{
         display: flex;
         flex-direction: row;
-        padding: 80px;
-    }
-    @include for-tablet-landscape{
-        display: flex;
-        flex-direction: row;
-        padding: 80px;
+        padding: 10px 40px 80px 40px;
+        justify-content: center;
+        @include for-tablet-portrait{
+            display: flex;
+            flex-direction: row;
+        }
+        @include for-tablet-landscape{
+            display: flex;
+            flex-direction: row;
+        }
+        @include for-mobile-only{
+            display: block;
+        }
+        img{
+            width: 50px;
+            height: auto;
+        }
+        .valueBox{
+            margin: 0 2em 0 2em;
+        }
     }
 }
 
@@ -308,6 +365,8 @@ footer{
         color: $primary-color;
         text-align: center;
         justify-self: flex-end;
+        font-size: $headerSize;
+        font-weight: normal;
 
     }
     p{
@@ -335,7 +394,6 @@ footer{
     margin: $section-margin;
     color: $back-color;
     padding: 50px;
-    height: 700px;
     position: relative;
 }
     .blueCont{
@@ -398,18 +456,66 @@ footer{
     padding: $section-margin;
     background-color: $grey-back-color;
     text-align: center;
+    height: 400px;
+    .contactPhone{
+        margin-bottom: 50px;
+    }
+    h2{
+        font-size: $headerSize;
+        font-weight: normal;
+        color: $primary-color;
+    }
 }
+
 /* SECTION 6 : Anfahrt und Öffnungszeiten */
 
 #anfahrt{
-    background-color: $light-back-color2;
-    color: #000;
     padding: 50px;
-    .ordi-modal {
+    position: relative;
+    h2{
+        color: $back-color;
+        font-weight: normal;
+        font-size: $headerSize;
+        margin-left: 2em;
+    }
+    .anfahrt-modal {
         background-color: $back-color;
         color: $secondary-color;
         text-align: center;
-        margin: auto;
+        display: flex;
+        width: 700px;
+        height: 300px;
+        box-shadow: $shadow;
+        margin-top: 7em;
+        margin-left: 6em;
+        img{
+            width: auto;
+            height: 300px;
+            justify-self: flex-end;
+        }
+        .anfahrtDetailsCont{
+            margin-right: 3em;
+            padding: 1em;
+        }
+    }
+    .hoursCont{
+        background-color: $light-back-color;
+        width: 300px;
+        height: 100px;
         display: block;
+        margin: auto;
+        padding: .5em;
+        text-align: center;
+        z-index: 3;
+        box-shadow: $shadow;
+    }
+    .blueCont2{
+        background-color: $secondary-color;
+        width: 55vw;
+        height: 500px;
+        position: absolute;
+        left: 0;
+        z-index: -1; 
+        margin-bottom: 4em; 
     }
 }
