@@ -173,7 +173,7 @@ nav img{
         z-index: 200;
         top: 0;
         left: 0;
-        background-color: $primary-color;
+        background-color: $back-color;
         overflow-x: hidden;
         transition: 0.5s ease-out;
         padding-top: 60px;
@@ -185,26 +185,27 @@ nav img{
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: $back-color;
+        color: $primary-font-color;
         display: block;
         transition: 0.3s;
     }
 }
 .sidenav a:hover{
-    color: $secondary-color;
+    color: $primary-color;
 }
 .sidenav .closebtn {
     @include for-mobile-only{
         position: absolute;
         top: 0;
         right: 25px;
-        font-size: 36px;
+        font-size: 60px;
         margin-left: 50px;
     }
 }
 .openBtn{
     display: none;
     @include for-mobile-only{
+        margin-left: 20px;
         display: block;
         height: 60px;
         font-size: 40px;
@@ -232,6 +233,9 @@ nav img{
     height: auto;
     padding: 50px;
     @include main-box-shadow(5px, 5px, 30px, $shadow-color);
+    @include for-mobile-only{
+        width: 80vw;
+    }
     h1{
         font-size: 2em;
         font-weight: normal;
@@ -308,6 +312,10 @@ footer{
         box-shadow: $shadow;
         cursor: pointer;
     }
+    @include for-mobile-only{
+        display: block;
+        height: auto;
+    }
     @include for-tablet-landscape{
         display: flex;
         flex-direction: row;
@@ -322,6 +330,10 @@ footer{
         background-color: $back-color;
         width: 40vw;
         padding: 6em 2em 2em 2em;
+        @include for-mobile-only{
+            width: auto;
+            padding: 1em 1em 3em 1em;
+        }
     }
     .serviceBox2{
         background-color: $grey-back-color;
@@ -336,10 +348,14 @@ footer{
         h3{
           color: $secondary-color;
         }
+        @include for-mobile-only{
+            display: block;
+            padding: 1em;
+            width: auto;
+        }
     
+    }
 }
-
-  }
 /* SECTION 2 : Meine Werte */
 
 #werte{
@@ -399,6 +415,12 @@ footer{
         width: 40vw;
         padding: 3em;
     }
+    @include for-mobile-only{
+        p{
+            width: 80vw;
+            padding: 1em;
+        }
+    }
     img{
         z-index: 3;
         width: 30vw;
@@ -412,6 +434,19 @@ footer{
     @include for-tablet-landscape{
      
     }
+    @include for-mobile-only{
+        img{
+            display: block;
+            width: 80vw;
+            height: auto;
+            margin: auto;
+        }
+        .greyCont{
+            background-color: $back-color;
+            display: block;
+            height: auto;
+        }
+    }
 
 }
 /* SECTION 4 : Ordination */
@@ -421,6 +456,9 @@ footer{
     color: $back-color;
     padding: 50px;
     position: relative;
+    @include for-mobile-only{
+        padding-top: 2em;
+    }
 }
     .blueCont{
         background-color: $secondary-color;
@@ -429,6 +467,9 @@ footer{
         position: absolute;
         right: 0;
         z-index: -1;
+        @include for-mobile-only{
+            width: 100vw;
+        }
     }
     .ordiCont{
         display: flex;
@@ -443,9 +484,18 @@ footer{
         margin-right: auto;
         width: 500px;
         height: 200px;
+        @include for-mobile-only{
+            display: block;
+            width: 70vw;
+            margin-top: 5em;
+        }
         .ordiDetailsCont{
          justify-self: flex-start;
          width: 200px;
+         @include for-mobile-only{
+             padding: 2em;
+             margin: 0;
+         }
             h2{
                 margin: 1em;
             }
@@ -459,6 +509,10 @@ footer{
             height: 200px;
             width: auto;
             z-index: 5;
+            @include for-mobile-only{
+                width: 250px;
+                height: auto;
+            }
         }
     }
 
@@ -467,11 +521,20 @@ footer{
         margin: 20px;
         margin-left: 8em;
         z-index: 3;
+        @include for-mobile-only{
+            display: block;
+            margin: 0;
+        }
         img{
             height: 200px;
             width: auto;
             z-index: 3;
             margin: 10px;
+            @include for-mobile-only{
+                margin: 0;
+                width: 250px;
+                height: auto;
+            }
         }
     }
 
@@ -496,6 +559,9 @@ footer{
     margin-bottom: 200px;
     padding: 50px;
     position: relative;
+    @include for-mobile-only{
+        margin-bottom: 50px;
+    }
     h2{
         color: $back-color;
         margin-left: 2em;
@@ -510,6 +576,20 @@ footer{
         box-shadow: $shadow;
         margin-top: 7em;
         margin-left: 6em;
+        @include for-mobile-only{
+            display: block;
+            width: 80vw;
+            height: auto;
+            margin-top: 6em;
+            margin-left: 0;
+            .mapsCont{
+                margin: auto;
+                display: block;
+                iframe{
+                    width: 300px;
+                }
+            }
+        }
         img{
             width: auto;
             height: 300px;
@@ -519,6 +599,10 @@ footer{
             width: 400px;
             margin-right: 1em;
             padding: 1.5em;
+            @include for-mobile-only{
+                width: auto;
+                margin: 0;
+            }
         }
     }
     .hoursCont{
@@ -540,6 +624,9 @@ footer{
         left: 0;
         z-index: -1; 
         margin-bottom: 4em; 
+        @include for-mobile-only{
+            width: 100vw;
+        }
     }
 }
 /* LEISTUNGEN SINGLE PAGE*/

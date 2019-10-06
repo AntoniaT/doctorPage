@@ -140,7 +140,7 @@ nav img {
     z-index: 200;
     top: 0;
     left: 0;
-    background-color: #62C2CE;
+    background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s ease-out;
     padding-top: 60px;
@@ -153,14 +153,14 @@ nav img {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #fff;
+    color: #808D9C;
     display: block;
     transition: 0.3s;
   }
 }
 
 .sidenav a:hover {
-  color: #3c64c2;
+  color: #62C2CE;
 }
 
 @media (max-width: 599px) {
@@ -168,7 +168,7 @@ nav img {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 60px;
     margin-left: 50px;
   }
 }
@@ -178,6 +178,7 @@ nav img {
 }
 @media (max-width: 599px) {
   .openBtn {
+    margin-left: 20px;
     display: block;
     height: 60px;
     font-size: 40px;
@@ -207,6 +208,11 @@ nav img {
   -moz-box-shadow: 5px, 5px, 30px, #1940E5;
   -ms-box-shadow: 5px, 5px, 30px, #1940E5;
   box-shadow: 5px, 5px, 30px, #1940E5;
+}
+@media (max-width: 599px) {
+  .cover-modal {
+    width: 80vw;
+  }
 }
 .cover-modal h1 {
   font-size: 2em;
@@ -300,6 +306,12 @@ footer {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+@media (max-width: 599px) {
+  #leistungen {
+    display: block;
+    height: auto;
+  }
+}
 @media (min-width: 900px) {
   #leistungen {
     display: flex;
@@ -316,6 +328,12 @@ footer {
   width: 40vw;
   padding: 6em 2em 2em 2em;
 }
+@media (max-width: 599px) {
+  #leistungen .serviceBox1 {
+    width: auto;
+    padding: 1em 1em 3em 1em;
+  }
+}
 #leistungen .serviceBox2 {
   background-color: #F4F4F4;
   padding: 6em 2em 2em 2em;
@@ -329,6 +347,13 @@ footer {
 }
 #leistungen .serviceBox2 h3 {
   color: #3c64c2;
+}
+@media (max-width: 599px) {
+  #leistungen .serviceBox2 {
+    display: block;
+    padding: 1em;
+    width: auto;
+  }
 }
 
 /* SECTION 2 : Meine Werte */
@@ -394,18 +419,43 @@ footer {
   width: 40vw;
   padding: 3em;
 }
+@media (max-width: 599px) {
+  #ueberMich p {
+    width: 80vw;
+    padding: 1em;
+  }
+}
 #ueberMich img {
   z-index: 3;
   width: 30vw;
   height: auto;
   justify-self: flex-start;
 }
+@media (max-width: 599px) {
+  #ueberMich img {
+    display: block;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+  }
+  #ueberMich .greyCont {
+    background-color: #fff;
+    display: block;
+    height: auto;
+  }
+}
+
 /* SECTION 4 : Ordination */
 #ordination {
   margin: 5em 1em;
   color: #fff;
   padding: 50px;
   position: relative;
+}
+@media (max-width: 599px) {
+  #ordination {
+    padding-top: 2em;
+  }
 }
 
 .blueCont {
@@ -415,6 +465,11 @@ footer {
   position: absolute;
   right: 0;
   z-index: -1;
+}
+@media (max-width: 599px) {
+  .blueCont {
+    width: 100vw;
+  }
 }
 
 .ordiCont {
@@ -431,9 +486,22 @@ footer {
   width: 500px;
   height: 200px;
 }
+@media (max-width: 599px) {
+  .ordiCont {
+    display: block;
+    width: 70vw;
+    margin-top: 5em;
+  }
+}
 .ordiCont .ordiDetailsCont {
   justify-self: flex-start;
   width: 200px;
+}
+@media (max-width: 599px) {
+  .ordiCont .ordiDetailsCont {
+    padding: 2em;
+    margin: 0;
+  }
 }
 .ordiCont .ordiDetailsCont h2 {
   margin: 1em;
@@ -448,6 +516,12 @@ footer {
   width: auto;
   z-index: 5;
 }
+@media (max-width: 599px) {
+  .ordiCont .ordiCardImg {
+    width: 250px;
+    height: auto;
+  }
+}
 
 .ordiCont2 {
   display: flex;
@@ -455,11 +529,24 @@ footer {
   margin-left: 8em;
   z-index: 3;
 }
+@media (max-width: 599px) {
+  .ordiCont2 {
+    display: block;
+    margin: 0;
+  }
+}
 .ordiCont2 img {
   height: 200px;
   width: auto;
   z-index: 3;
   margin: 10px;
+}
+@media (max-width: 599px) {
+  .ordiCont2 img {
+    margin: 0;
+    width: 250px;
+    height: auto;
+  }
 }
 
 /* SECTION 5 : Kontakt */
@@ -482,6 +569,11 @@ footer {
   padding: 50px;
   position: relative;
 }
+@media (max-width: 599px) {
+  #anfahrt {
+    margin-bottom: 50px;
+  }
+}
 #anfahrt h2 {
   color: #fff;
   margin-left: 2em;
@@ -497,6 +589,22 @@ footer {
   margin-top: 7em;
   margin-left: 6em;
 }
+@media (max-width: 599px) {
+  #anfahrt .anfahrt-modal {
+    display: block;
+    width: 80vw;
+    height: auto;
+    margin-top: 6em;
+    margin-left: 0;
+  }
+  #anfahrt .anfahrt-modal .mapsCont {
+    margin: auto;
+    display: block;
+  }
+  #anfahrt .anfahrt-modal .mapsCont iframe {
+    width: 300px;
+  }
+}
 #anfahrt .anfahrt-modal img {
   width: auto;
   height: 300px;
@@ -506,6 +614,12 @@ footer {
   width: 400px;
   margin-right: 1em;
   padding: 1.5em;
+}
+@media (max-width: 599px) {
+  #anfahrt .anfahrt-modal .anfahrtDetailsCont {
+    width: auto;
+    margin: 0;
+  }
 }
 #anfahrt .hoursCont {
   background-color: #F4F4F4;
@@ -526,6 +640,11 @@ footer {
   left: 0;
   z-index: -1;
   margin-bottom: 4em;
+}
+@media (max-width: 599px) {
+  #anfahrt .blueCont2 {
+    width: 100vw;
+  }
 }
 
 /* LEISTUNGEN SINGLE PAGE*/
