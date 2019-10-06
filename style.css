@@ -27,6 +27,13 @@ p {
   font-size: 1.2em;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 /* STYLE THE HOVER ANIMATION FOR NAV BAR*/
 .main-nav .navUnderline:after {
   background: none repeat scroll 0 0 transparent;
@@ -55,25 +62,26 @@ p {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.ctaBtn::after {
-  transition: 1s;
+/* .ctaBtn::after{
+    transition: 1s;
 }
-
-.ctaBtn:hover::after {
-  content: "  >";
-  color: #fff;
-  transition: width 1s ease 0s, left 1s ease 0s;
-}
-
+.ctaBtn:hover::after{
+    content: "  >";
+    color: $back-color;
+    transition: width 1s ease 0s, left 1s ease 0s;
+} */
 /* NAV */
 .nav-white {
-  background-color: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: top 300ms ease;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
+}
+
+.white {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .main-nav {
@@ -201,12 +209,13 @@ nav img {
   box-shadow: 5px, 5px, 30px, #1940E5;
 }
 .cover-modal h1 {
-  font-size: 1.8em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-size: 2em;
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 .cover-modal p {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 /* FOOTER */
@@ -281,8 +290,6 @@ footer {
 #leistungen h2 {
   color: #3c64c2;
   padding: 40px 0px 0px 0px;
-  font-size: 1.8em;
-  font-weight: normal;
 }
 #leistungen .leistungenBtn {
   padding: 8px 20px;
@@ -333,8 +340,6 @@ footer {
 #werte h2 {
   color: #62C2CE;
   padding: 40px 0px 0px 0px;
-  font-size: 1.8em;
-  font-weight: normal;
 }
 #werte .valueCont {
   display: flex;
@@ -384,8 +389,6 @@ footer {
   color: #62C2CE;
   text-align: center;
   justify-self: flex-end;
-  font-size: 1.8em;
-  font-weight: normal;
 }
 #ueberMich p {
   width: 40vw;
@@ -434,7 +437,6 @@ footer {
 }
 .ordiCont .ordiDetailsCont h2 {
   margin: 1em;
-  font-weight: normal;
 }
 .ordiCont .ordiDetailsCont p {
   margin: 1em;
@@ -471,8 +473,6 @@ footer {
   margin-bottom: 50px;
 }
 #kontakt h2 {
-  font-size: 1.8em;
-  font-weight: normal;
   color: #62C2CE;
 }
 
@@ -484,8 +484,6 @@ footer {
 }
 #anfahrt h2 {
   color: #fff;
-  font-weight: normal;
-  font-size: 1.8em;
   margin-left: 2em;
 }
 #anfahrt .anfahrt-modal {
@@ -493,8 +491,8 @@ footer {
   color: #3c64c2;
   text-align: center;
   display: flex;
-  width: 700px;
-  height: 300px;
+  width: 800px;
+  height: 350px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-top: 7em;
   margin-left: 6em;
@@ -505,8 +503,9 @@ footer {
   justify-self: flex-end;
 }
 #anfahrt .anfahrt-modal .anfahrtDetailsCont {
-  margin-right: 3em;
-  padding: 1em;
+  width: 400px;
+  margin-right: 1em;
+  padding: 1.5em;
 }
 #anfahrt .hoursCont {
   background-color: #F4F4F4;
@@ -531,14 +530,14 @@ footer {
 
 /* LEISTUNGEN SINGLE PAGE*/
 .backBtn {
-  border: 2px solid #62C2CE;
+  border: 2px solid #3c64c2;
   padding: 6px 20px;
-  color: #62C2CE;
+  color: #3c64c2;
   font-size: 1.2em;
 }
 
 .backBtn:hover {
-  background-color: #62C2CE;
+  background-color: #3c64c2;
   color: #fff;
 }
 
@@ -555,6 +554,10 @@ footer {
 .serviceBoxCont ul {
   text-align: left;
 }
+.serviceBoxCont .leistungImg {
+  width: 40vw;
+  height: auto;
+}
 
 #parent {
   margin-top: 6em;
@@ -568,7 +571,6 @@ footer {
 .leistungSingleCont {
   width: 70vw;
   height: 70%;
-  display: flex;
   margin: auto;
   padding: 3em;
   background-color: #fff;
