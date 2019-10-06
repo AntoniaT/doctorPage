@@ -14,9 +14,9 @@
         <!-- MAIN NAV -->
         <nav class="nav-white">
             <ul class="main-nav"> 
-                <li class="push"><a href="index.html"><img src="images/Logo-Icon-turcoise.png"></a></li>
+                <li class="push"><a href="index.html"><img src="images/Logo-full.png"></a></li>
                 <li><a href="leistungen.html">Leistungen</a></li>
-                <li><a href="index.html#uebermich">Über mich</a></li>
+                <li><a href="index.html#ueberMich">Über mich</a></li>
                 <li><a href="#">Ordination</a></li>
                 <li><a class="contactNavBtn contactBtn" href="#">Kontakt</a></li>
             </ul>
@@ -36,18 +36,14 @@
     <main>
         <section id="leistungen">
           <div class="valueBox1">
-            <h2>Meine Leistungen</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            <button class="leistungenBtn">Zu den Leistungen</button>
-          </div>
-          <div class="valueBox2">
-              <div>
-              <h3>Meine Leistungen im Einzelnen:</h3>
-                <ul><strong>Endoskopie – Magen/Darmspiegelung:</strong>
+            <h2>Meine Leistungen im Überblick</h2>
+            <div class="serviceBoxCont">
+                <h2>Meine Leistungen im Einzelnen</h2>
+                <ul><h3>Endoskopie – Magen/Darmspiegelung:</h3>
                     <li>Gastroskopie (Magenspiegelung)</li>
                     <li>Koloskopie (Darmspiegelung)</li>
                 </ul>
-                <ul><strong>Operative Behandlungen:</strong>
+                <ul><h3>Operative Behandlungen:</h3>
                     <li>Mammachirurgie / Senologie / Brustkrebs / männliche Gynäkomastie</li>
                     <li>Leistenbruch</li>
                     <li>Nabelbruch</li>
@@ -55,31 +51,44 @@
                     <li>Gallenblase</li>
                     <li>Schilddrüse - Erkrankungen der Schilddrüse/Nebenschilddrüse</li>
                 </ul>
-              </div>
-              <div>
-                <ul><strong>Handchirurgie:</strong>
-                    <li>Karpaltunnelsyndrom (CTS)</li>
-                    <li>Venen/Krampfadern</li>
-                    <li>Appendizitis/Blinddarmbeschwerden</li>
-                    <li>Darmchirurgie /Rektumchirurgie</li>
-                    <li>Divertikulitis</li>
-                </ul>
-                <ul><strong>Proktologische/Enddarmbeschwerden:</strong>
-                    <li>Akute/chronische Analfissur</li>
-                    <li>Fisteln/Abszeße/Perianalvenenthrombose</li>
-                </ul>
-                <ul><strong>Haut und Weichteile:</strong>
-                    <li>Pilonidalsinus/Steißbeinfistel/Sakraldermoid</li>
-                    <li>Talggeschwulst(Atherome)</li>
-                </ul>
-              </div>
+            </div>
+          </div>
+          <div class="serviceBoxCont">
+            <div class="secondBox">
+            <ul><h3>Handchirurgie:</h3>
+                <li>Karpaltunnelsyndrom (CTS)</li>
+                <li>Venen/Krampfadern</li>
+                <li>Appendizitis/Blinddarmbeschwerden</li>
+                <li>Darmchirurgie /Rektumchirurgie</li>
+                <li>Divertikulitis</li>
+            </ul>
+            <ul><h3>Proktologische/Enddarmbeschwerden:</h3>
+                <li>Akute/chronische Analfissur</li>
+                <li>Fisteln/Abszeße/Perianalvenenthrombose</li>
+            </ul>
+            <ul><h3>Haut und Weichteile:</h3>
+                <li>Pilonidalsinus/Steißbeinfistel/Sakraldermoid</li>
+                <li>Talggeschwulst(Atherome)</li>
+            </ul>
+            </div>
           </div>
         </section>
         <section>
             <div id="parent"></div>
                 <template id="myTemplate">
-                    <h1 class="leistungTitle">TITLE</h1>
-                    <p class="leistungCopy">COPY</p>
+                    <div class="leistungSection">
+                        <article class="leistungSingleCont">
+                            <div>
+                            <h1 class="leistungTitle">TITLE</h1>
+                            <p class="leistungCopy">COPY</p>
+                            <button class="ctaBtn">Termin vereinbaren</button>
+                            </div>
+                            <div>
+                            <p class="leistungCopy2">COPY2</p>
+                            <p>Im Rahmen einer persönlichen Beratung finden wir die beste Behandlungsmöglichkeit für Sie!</p>
+                            <button class="backBtn">Zurück</button>
+                            </div>
+                        </article>
                 </template>
             
         </section>

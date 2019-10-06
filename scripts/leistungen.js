@@ -6,17 +6,22 @@ console.log(newArray); */
 /* leistungContent.forEach((element, i) =>{
         console.log(leistungen[i].title)
 }); */
+const myTemplate = document.querySelector("#myTemplate").content;
 
-leistungen.forEach(element => {
-    console.log(element.title); 
-    console.log(element.copy);
+function showLeistung(leistungen){
+leistungen.forEach(leistung => {
+    console.log(leistungen); 
+    console.log(leistung.copy);
     
     const clone = myTemplate.cloneNode(true);
     const parent = document.querySelector('#parent');
 
-    clone.querySelector(".leistungTitle").textContent = element.title;
-    clone.querySelector(".leistungCopy").textContent = element.copy;
+    clone.querySelector(".leistungTitle").textContent = leistung.title;
+    clone.querySelector(".leistungCopy").textContent = leistung.copy;
+    clone.querySelector(".leistungCopy2").textContent = leistung.copy2;
 
     parent.appendChild(clone);
     });
+}
 
+showLeistung(leistungen);
