@@ -11,34 +11,41 @@
 </head>
 <body>
     <header>
-        <!-- MAIN NAV -->
-        <nav class="nav-white">
-            <ul class="main-nav"> 
-                <li class="push"><a href="index.html"><img src="images/Logo-full.png"></a></li>
-                <li><a href="leistungen.html">Leistungen</a></li>
-                <li><a href="index.html#ueberMich">Über mich</a></li>
-                <li><a href="#">Ordination</a></li>
-                <li><a class="contactNavBtn contactBtn" href="#">Kontakt</a></li>
-            </ul>
-            <li class="openBtn" onclick="openNav()">&#9776;</li>
-
-        </nav>
-
-        <!-- MOBILE SIDE NAV -->
-        <div id="mobile-nav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Leistungen</a>
-                <a href="#">Über mich</a>
-                <a href="#">Ordination</a>
-                <a href="#">Kontakt</a>
-        </div>
-    </header>
+            <!-- MAIN NAV -->
+            <nav class="nav-white">
+                <ul class="main-nav"> 
+                    <li class="push"><a href="index.html"><img src="images/Logo-full.png"></a></li>
+                    <li><a class="navUnderline" href="leistungen.html">Leistungen</a></li>
+                    <li><a class="navUnderline" href="index.html#ueberMich">Über mich</a></li>
+                    <li><a class="navUnderline" href="index.html#ordination">Ordination</a></li>
+                    <li><a class="contactNavBtn" href="index.html#kontakt">Kontakt</a></li>
+                </ul>
+                <li class="openBtn" onclick="openNav()">&#9776;</li>
+    
+            </nav>
+    
+            <!-- MOBILE SIDE NAV -->
+            <div id="mobile-nav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="leistungen.html">Leistungen</a>
+                    <a href="index.html#ueberMich">Über mich</a>
+                    <a href="index.html#ordination">Ordination</a>
+                    <a href="index.html#kontakt">Kontakt</a>
+            </div>
+        </header>
     <main>
-        <section id="leistungen">
-          <div class="valueBox1">
-            <div class="serviceBoxCont">
-                <img class="leistungImg" src="images/behandlungsraum.jpg" alt="behandlungsraum">
+        <section id="leistungen" class="leistungenPage">
+          <div>
+            <div class="serviceBox1">
+                <img class="leistungImg" src="images/behandlungsraum.png" alt="behandlungsraum">
                 <h2>Meine Leistungen im Einzelnen</h2>
+                <p>Klicken Sie auf die einzelnen Leistungen um Näheres zu den Eingriffen zu erfahren.</p>
+                <button class="leistungenBtn">ZU DEN LEISTUNGEN</button>
+            </div>
+          </div>
+          <div class="serviceBox2">
+            <div id="secondBox">
+            <div>
                 <ul><h3>Endoskopie – Magen/Darmspiegelung:</h3>
                     <li>Gastroskopie (Magenspiegelung)</li>
                     <li>Koloskopie (Darmspiegelung)</li>
@@ -52,24 +59,23 @@
                     <li>Schilddrüse - Erkrankungen der Schilddrüse/Nebenschilddrüse</li>
                 </ul>
             </div>
-          </div>
-          <div class="serviceBoxCont">
-            <div class="secondBox">
-            <ul><h3>Handchirurgie:</h3>
-                <li>Karpaltunnelsyndrom (CTS)</li>
-                <li>Venen/Krampfadern</li>
-                <li>Appendizitis/Blinddarmbeschwerden</li>
-                <li>Darmchirurgie /Rektumchirurgie</li>
-                <li>Divertikulitis</li>
-            </ul>
-            <ul><h3>Proktologische/Enddarmbeschwerden:</h3>
-                <li>Akute/chronische Analfissur</li>
-                <li>Fisteln/Abszeße/Perianalvenenthrombose</li>
-            </ul>
-            <ul><h3>Haut und Weichteile:</h3>
-                <li>Pilonidalsinus/Steißbeinfistel/Sakraldermoid</li>
-                <li>Talggeschwulst(Atherome)</li>
-            </ul>
+            <div>
+                <ul><h3>Handchirurgie:</h3>
+                    <li>Karpaltunnelsyndrom (CTS)</li>
+                    <li>Venen/Krampfadern</li>
+                    <li>Appendizitis/Blinddarmbeschwerden</li>
+                    <li>Darmchirurgie /Rektumchirurgie</li>
+                    <li>Divertikulitis</li>
+                </ul>
+                <ul><h3>Proktologische/Enddarmbeschwerden:</h3>
+                    <li>Akute/chronische Analfissur</li>
+                    <li>Fisteln/Abszeße/Perianalvenenthrombose</li>
+                </ul>
+                <ul><h3>Haut und Weichteile:</h3>
+                    <li>Pilonidalsinus/Steißbeinfistel/Sakraldermoid</li>
+                    <li>Talggeschwulst(Atherome)</li>
+                </ul>
+            </div>
             </div>
           </div>
         </section>
@@ -89,6 +95,7 @@
                             <button class="ctaBtn">Termin vereinbaren</button>
                             </div>
                         </article>
+                    </div>
                 </template>
             
         </section>

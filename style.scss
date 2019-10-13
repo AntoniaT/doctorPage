@@ -99,6 +99,7 @@ h2{
   }
 }
 .ctaBtn{
+    cursor: pointer;
     border-radius: 2px;
     background-color: $ctaColor;
     padding: $ctaPadding;
@@ -396,6 +397,7 @@ footer{
 /* SECTION 3 : Über mich */
 
 #ueberMich{
+    margin-top: 5em;
     background-color: $back-color;
     padding-top: 50px;
     position: relative;
@@ -452,13 +454,16 @@ footer{
 /* SECTION 4 : Ordination */
 
 #ordination{
-    margin: $section-margin;
     color: $back-color;
     padding: 50px;
     position: relative;
     @include for-mobile-only{
         padding-top: 2em;
     }
+}
+.ordiSection{
+    margin-top: 7em;
+
 }
     .blueCont{
         background-color: $secondary-color;
@@ -482,7 +487,7 @@ footer{
         box-shadow: $shadow;
         margin-left: auto;
         margin-right: auto;
-        width: 500px;
+        width: 650px;
         height: 200px;
         @include for-mobile-only{
             display: block;
@@ -491,7 +496,7 @@ footer{
         }
         .ordiDetailsCont{
          justify-self: flex-start;
-         width: 200px;
+         width: 350px;
          @include for-mobile-only{
              padding: 2em;
              margin: 0;
@@ -537,7 +542,12 @@ footer{
             }
         }
     }
-
+.ordiImg{
+    height: 250px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
 
 /* SECTION 5 : Kontakt */
 #kontakt{
@@ -545,12 +555,14 @@ footer{
     background-color: $grey-back-color;
     text-align: center;
     height: 400px;
-    .contactPhone{
+    .contactCont{
+        margin-top: 5em;
         margin-bottom: 50px;
     }
     h2{
         color: $primary-color;
     }
+
 }
 
 /* SECTION 6 : Anfahrt und Öffnungszeiten */
@@ -572,7 +584,7 @@ footer{
         text-align: center;
         display: flex;
         width: 800px;
-        height: 350px;
+        height: 400px;
         box-shadow: $shadow;
         margin-top: 7em;
         margin-left: 6em;
@@ -586,7 +598,8 @@ footer{
                 margin: auto;
                 display: block;
                 iframe{
-                    width: 300px;
+                    width: 250px;
+                    height: 400px;
                 }
             }
         }
@@ -596,13 +609,15 @@ footer{
             justify-self: flex-end;
         }
         .anfahrtDetailsCont{
-            width: 400px;
-            margin-right: 1em;
+            width: 700px;
             padding: 1.5em;
             @include for-mobile-only{
                 width: auto;
                 margin: 0;
             }
+        }
+        .anfahrtText{
+            font-size: 1em;
         }
     }
     .hoursCont{
@@ -619,7 +634,7 @@ footer{
     .blueCont2{
         background-color: $secondary-color;
         width: 55vw;
-        height: 500px;
+        height: 600px;
         position: absolute;
         left: 0;
         z-index: -1; 
@@ -630,32 +645,38 @@ footer{
     }
 }
 /* LEISTUNGEN SINGLE PAGE*/
+.leistungenPage{
+    margin-top: 6em;
+    .serviceBox2{
+        display: flex;
+        flex-direction: row;
+    }
+}
 .backBtn{
-    border: 2px solid $secondary-color;
+    border: 2px solid $primary-color;
     padding: 6px 20px;
-    color: $secondary-color;
+    color: $primary-color;
     font-size: $ctaSize;
 }
 .backBtn:hover{
-    background-color: $secondary-color;
+    background-color: $primary-color;
     color: $back-color;
+}
+#secondBox{
 }
 .serviceBoxCont{
     padding: 0em 0em 4em 0em;
     line-height: 150%;
     width: 50vw;
     margin: 4em 1em;
-    .secondBox{
-        margin-top: 6em;
-        padding-top: 4.5em;
-    }
     ul{
         text-align: left;
     }
-    .leistungImg{
-        width: 40vw;
-        height: auto;
-    }
+
+}
+.leistungImg{
+    width: 30vw;
+    height: auto;
 }
 #parent{
     margin-top: 6em;
@@ -671,4 +692,13 @@ footer{
     padding: 3em;
     background-color: $back-color;
     box-shadow: $shadow;
+}
+
+// ADD A WHITE CLASS FOR THE TEMPLATE
+
+.white{
+    background-color: #fff;
+}
+.blue{
+    background-color: $secondary-color;
 }

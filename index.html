@@ -15,7 +15,7 @@
         <nav class="nav-white">
             <ul class="main-nav"> 
                 <li class="push"><a href="index.html"><img src="images/Logo-full.png"></a></li>
-                <li><a class="navUnderline" href="#leistungen">Leistungen</a></li>
+                <li><a class="navUnderline" href="leistungen.html">Leistungen</a></li>
                 <li><a class="navUnderline" href="#ueberMich">Über mich</a></li>
                 <li><a class="navUnderline" href="#ordination">Ordination</a></li>
                 <li><a class="contactNavBtn" href="#kontakt">Kontakt</a></li>
@@ -27,7 +27,7 @@
         <!-- MOBILE SIDE NAV -->
         <div id="mobile-nav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#leistungen">Leistungen</a>
+                <a href="leistungen.html">Leistungen</a>
                 <a href="#">Über mich</a>
                 <a href="#">Ordination</a>
                 <a href="#">Kontakt</a>
@@ -119,11 +119,12 @@
         </section>
 
         <section id="ordination">
+          <div class="ordiSection">
             <div class="blueCont"></div>
             <div class="ordiCont"> 
               <div class="ordiDetailsCont">
                     <h2>Ordination</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p>Meine Ordination befindet sich im <strong>Medizinischen Zentrum Mariagrün</strong></p>
               </div>
                 <img class="ordiCardImg" src="images/ordination-aussen2.png" alt="location">
             </div>
@@ -133,17 +134,19 @@
                 <img src="images/stock-photo.jpg" alt="ordination innen">
             </div>
             <div>
-                <img src="images/" alt="ordination innen">
+                <img class="ordiImg" src="images/Ordi-innen2.png" alt="ordination innen">
             </div>
-
+          </div>
         </section>
 
         <section id="kontakt">
+            <div class="contactCont">
                 <h2>Kontakt und Anmeldung</h2>
                 <p>Termine <strong>Montags</strong>, nur nach Vereinbarung.</p>
-                <p class="contactPhone">Sie können mich gerne telefonisch unter<strong> 0664/980769</strong> oder über Emailanfrage erreichen:</p>
+                <p>Sie können mich gerne telefonisch unter<strong> 0664/980769</strong> oder über Emailanfrage erreichen:</p>
                 <p>Ich freue mich darauf, Sie kennenzulernen!</p>
-                <a class="ctaBtn contactBtn" href="mailto:office@dr-uranitsch.at">ANFRAGEN</a>
+            </div>
+                <a class="ctaBtn" href="mailto:office@dr-uranitsch.at">EMAIL ANFRAGE</a>
 
             <!--    <form>
                     <h3>Kontaktanfrage</h3>
@@ -187,10 +190,10 @@
                     <h3>Öffnungszeiten:</h3>
                     <p>Montags 9-17 Uhr</p>
                     <h3>Anfahrt</h3>
-                    <p>Wenn Sie von der Straße kommen, biegen Sie rechts in die Hilmteichstrasse ab. Parkplätze stehen zur Verfügung. Dies ist übrigens ein Platzhaltertext.</p>
+                    <p class="anfahrtText">Hilmteichstraße 134, 8043 Graz<br>(Ecke Stenggstraße)<br><br>Straßenbahnlinie 1, Buslinie 58 –<br>Haltestelle Mariagrün<br><br>Barrierefreier Zugang im Erdgeschoss<br><br>Kostenlose Ordinationsparkplätze nach Verfügbarkeit vor der Tür</p>
                 </div>
                 <div class="mapsCont">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.5042863911035!2d15.458128015612642!3d47.08918387915378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e4a0b2f64ba53%3A0x4007863716e0d652!2sHilmteichstra%C3%9Fe%20134%2C%208036%20Graz%2C%20Austria!5e0!3m2!1sen!2sdk!4v1570357940015!5m2!1sen!2sdk" width="550" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.5042863911035!2d15.458128015612642!3d47.08918387915378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e4a0b2f64ba53%3A0x4007863716e0d652!2sHilmteichstra%C3%9Fe%20134%2C%208036%20Graz%2C%20Austria!5e0!3m2!1sen!2sdk!4v1570357940015!5m2!1sen!2sdk" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
 <!--             <div class="hoursCont">
