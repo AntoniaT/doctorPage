@@ -295,12 +295,12 @@ footer {
   background-color: #fff;
 }
 #leistungen h2 {
-  color: #3c64c2;
+  color: #6283CE;
   padding: 40px 0px 0px 0px;
 }
 #leistungen .leistungenBtn {
   padding: 8px 20px;
-  background-color: #3c64c2;
+  background-color: #6283CE;
   color: #fff;
   font-size: 1em;
   border: none;
@@ -347,7 +347,7 @@ footer {
   height: auto;
 }
 #leistungen .serviceBox2 h3 {
-  color: #3c64c2;
+  color: #6283CE;
 }
 @media (max-width: 599px) {
   #leistungen .serviceBox2 {
@@ -359,12 +359,12 @@ footer {
 
 /* SECTION 2 : Meine Werte */
 #werte {
-  background-color: #3c64c2;
+  background-color: #6283CE;
   color: #fff;
   text-align: center;
 }
 #werte h2 {
-  color: #62C2CE;
+  color: #fff;
   padding: 40px 0px 0px 0px;
 }
 #werte .valueCont {
@@ -464,7 +464,7 @@ footer {
 }
 
 .blueCont {
-  background-color: #3c64c2;
+  background-color: #6283CE;
   width: 55vw;
   height: 500px;
   position: absolute;
@@ -483,7 +483,7 @@ footer {
   z-index: 3;
   margin-top: -50px;
   background-color: #fff;
-  color: #3c64c2;
+  color: #6283CE;
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-left: auto;
@@ -593,7 +593,7 @@ footer {
 }
 #anfahrt .anfahrt-modal {
   background-color: #fff;
-  color: #3c64c2;
+  color: #6283CE;
   text-align: center;
   display: flex;
   width: 800px;
@@ -649,7 +649,7 @@ footer {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 #anfahrt .blueCont2 {
-  background-color: #3c64c2;
+  background-color: #6283CE;
   width: 55vw;
   height: 600px;
   position: absolute;
@@ -694,6 +694,10 @@ footer {
   text-align: left;
 }
 
+.leistungTitle {
+  font-size: 1.5em;
+}
+
 .leistungImg {
   width: 30vw;
   height: auto;
@@ -704,25 +708,32 @@ footer {
 }
 
 .leistungSection {
-  background-color: #3c64c2;
-  padding: 3em 2em;
+  background-color: #6283CE;
+  padding: 8em 2em;
+  height: 600px;
 }
 
 .leistungSingleCont {
-  width: 70vw;
-  height: 70%;
+  width: 60vw;
+  height: auto;
   margin: auto;
-  padding: 3em;
+  padding: 5em 8em;
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.white {
+#serviceExtra {
   background-color: #fff;
+  width: 40vw;
+  padding: 4em 3em;
+}
+
+.grey {
+  background-color: #F4F4F4;
 }
 
 .blue {
-  background-color: #3c64c2;
+  background-color: #6283CE;
 }
 
 /*# sourceMappingURL=style.css.map */

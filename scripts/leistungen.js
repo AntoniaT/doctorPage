@@ -16,18 +16,19 @@ leistungen.forEach(leistung => {
     const clone = myTemplate.cloneNode(true);
     const parent = document.querySelector('#parent');
     let number = leistung.id;
-    const background = document.querySelector(".leistungSection");
+    const background = document.querySelectorAll(".leistungSection");
 
     clone.querySelector(".leistungTitle").textContent = leistung.title;
     clone.querySelector(".leistungCopy").textContent = leistung.copy;
     clone.querySelector(".leistungCopy2").textContent = leistung.copy2;
-
-    parent.appendChild(clone);
     if(number % 2 === 0){
-        console.log("this is odd!");
+        console.log("this is even!");
+        console.log(leistung.id)
         console.log(background);
-        background.classList.add("white");
+        clone.querySelector(".leistungSection").classList.add("grey");
     }
+    parent.appendChild(clone);
+
     });
 }
 

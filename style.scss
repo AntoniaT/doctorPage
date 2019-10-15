@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
 $primary-color: #62C2CE;
-$secondary-color: #3c64c2;
+$secondary-color:#6283CE;
+$ternary-color: #DDCBB5;
+// #3c64c2;
 
 $back-color: #fff;
 $light-back-color: #F4F4F4;
@@ -364,7 +366,7 @@ footer{
     color: $back-color;
     text-align: center;
     h2{
-        color: $primary-color;
+        color: $back-color;
         padding: 40px 0px 0px 0px;
 
     }
@@ -662,8 +664,7 @@ footer{
     background-color: $primary-color;
     color: $back-color;
 }
-#secondBox{
-}
+
 .serviceBoxCont{
     padding: 0em 0em 4em 0em;
     line-height: 150%;
@@ -672,8 +673,11 @@ footer{
     ul{
         text-align: left;
     }
-
 }
+.leistungTitle{
+    font-size: 1.5em;
+}
+
 .leistungImg{
     width: 30vw;
     height: auto;
@@ -683,21 +687,26 @@ footer{
 }
 .leistungSection{
     background-color: $secondary-color;
-    padding: 3em 2em;
+    padding: 8em 2em;
+    height: 600px;
 }
 .leistungSingleCont{
-    width: 70vw;
-    height: 70%;
+    width: 60vw;
+    height: auto;
     margin: auto;
-    padding: 3em;
+    padding: 5em 8em;
     background-color: $back-color;
     box-shadow: $shadow;
 }
-
+#serviceExtra{
+    background-color: #fff;
+    width: 40vw;
+    padding: 4em 3em;
+}
 // ADD A WHITE CLASS FOR THE TEMPLATE
 
-.white{
-    background-color: #fff;
+.grey{
+    background-color: $grey-back-color;
 }
 .blue{
     background-color: $secondary-color;
