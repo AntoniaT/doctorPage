@@ -8,6 +8,11 @@
 /* CTA and Secondary BUTTONS*/
 /* breakpoints for MEDIA QUERIES */
 /* mixin function for box shadows */
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   margin: auto 0;
   font-family: "Roboto Condensed", sans-serif;
@@ -295,12 +300,12 @@ footer {
   background-color: #fff;
 }
 #leistungen h2 {
-  color: #6283CE;
+  color: #465960;
   padding: 40px 0px 0px 0px;
 }
 #leistungen .leistungenBtn {
   padding: 8px 20px;
-  background-color: #6283CE;
+  background-color: #465960;
   color: #fff;
   font-size: 1em;
   border: none;
@@ -347,19 +352,22 @@ footer {
   height: auto;
 }
 #leistungen .serviceBox2 h3 {
-  color: #6283CE;
+  color: #465960;
 }
 @media (max-width: 599px) {
   #leistungen .serviceBox2 {
     display: block;
-    padding: 1em;
+    padding: 2em;
     width: auto;
+  }
+  #leistungen .serviceBox2 div {
+    width: 70vw;
   }
 }
 
 /* SECTION 2 : Meine Werte */
 #werte {
-  background-color: #6283CE;
+  background-color: #62C2CE;
   color: #fff;
   text-align: center;
 }
@@ -410,16 +418,17 @@ footer {
   display: flex;
   background-color: #F4F4F4;
   width: 90vw;
-  height: 400px;
+  height: 600px;
 }
 #ueberMich h2 {
+  margin-top: 2em;
   color: #62C2CE;
   text-align: center;
   justify-self: flex-end;
 }
 #ueberMich p {
   width: 40vw;
-  padding: 3em;
+  padding: 2em 3em;
 }
 @media (max-width: 599px) {
   #ueberMich p {
@@ -429,7 +438,8 @@ footer {
 }
 #ueberMich img {
   z-index: 3;
-  width: 30vw;
+  margin-top: 4em;
+  width: 35vw;
   height: auto;
   justify-self: flex-start;
 }
@@ -464,11 +474,12 @@ footer {
 }
 
 .blueCont {
-  background-color: #6283CE;
-  width: 55vw;
-  height: 500px;
+  background-color: #465960;
+  width: 60vw;
+  height: 600px;
   position: absolute;
   right: 0;
+  top: 12em;
   z-index: -1;
 }
 @media (max-width: 599px) {
@@ -483,7 +494,7 @@ footer {
   z-index: 3;
   margin-top: -50px;
   background-color: #fff;
-  color: #6283CE;
+  color: #465960;
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-left: auto;
@@ -557,8 +568,14 @@ footer {
 .ordiImg {
   height: 250px;
   width: auto;
-  margin: auto;
+  margin-left: 22em;
   display: block;
+}
+@media (max-width: 599px) {
+  .ordiImg {
+    width: 70vw;
+    height: auto;
+  }
 }
 
 /* SECTION 5 : Kontakt */
@@ -593,7 +610,7 @@ footer {
 }
 #anfahrt .anfahrt-modal {
   background-color: #fff;
-  color: #6283CE;
+  color: #465960;
   text-align: center;
   display: flex;
   width: 800px;
@@ -649,7 +666,7 @@ footer {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 #anfahrt .blueCont2 {
-  background-color: #6283CE;
+  background-color: #465960;
   width: 55vw;
   height: 600px;
   position: absolute;
@@ -708,7 +725,7 @@ footer {
 }
 
 .leistungSection {
-  background-color: #6283CE;
+  background-color: #465960;
   padding: 8em 2em;
   height: 600px;
 }
@@ -733,7 +750,7 @@ footer {
 }
 
 .blue {
-  background-color: #6283CE;
+  background-color: #465960;
 }
 
 /*# sourceMappingURL=style.css.map */

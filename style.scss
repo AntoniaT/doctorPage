@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
 $primary-color: #62C2CE;
-$secondary-color:#6283CE;
+$secondary-color: #465960;
+//#679592;
+//#465960;
+//#6283CE;
 $ternary-color: #DDCBB5;
 // #3c64c2;
 
@@ -57,7 +60,10 @@ $secBtn: 1em;
     -ms-box-shadow: $x, $y, $blur, $c;
     box-shadow: $x, $y, $blur, $c;
   }
-
+html, body{
+    width: 100vw;
+    overflow-x: hidden;
+}
 body{
     margin: auto 0;
     font-family: $main-font;
@@ -353,8 +359,11 @@ footer{
         }
         @include for-mobile-only{
             display: block;
-            padding: 1em;
+            padding: 2em;
             width: auto;
+            div{
+                width: 70vw;
+            }
         }
     
     }
@@ -362,7 +371,7 @@ footer{
 /* SECTION 2 : Meine Werte */
 
 #werte{
-    background-color: $secondary-color;
+    background-color: $primary-color;
     color: $back-color;
     text-align: center;
     h2{
@@ -408,16 +417,17 @@ footer{
         display: flex;
         background-color: $grey-back-color;
         width: 90vw;
-        height: 400px;
+        height: 600px;
     }
     h2{
+        margin-top: 2em;
         color: $primary-color;
         text-align: center;
         justify-self: flex-end;
     }
     p{
         width: 40vw;
-        padding: 3em;
+        padding: 2em 3em;
     }
     @include for-mobile-only{
         p{
@@ -427,7 +437,8 @@ footer{
     }
     img{
         z-index: 3;
-        width: 30vw;
+        margin-top: 4em;
+        width: 35vw;
         height: auto;
         justify-self: flex-start;
     }
@@ -469,10 +480,11 @@ footer{
 }
     .blueCont{
         background-color: $secondary-color;
-        width: 55vw;
-        height: 500px;
+        width: 60vw;
+        height: 600px;
         position: absolute;
         right: 0;
+        top: 12em;
         z-index: -1;
         @include for-mobile-only{
             width: 100vw;
@@ -547,8 +559,12 @@ footer{
 .ordiImg{
     height: 250px;
     width: auto;
-    margin: auto;
+    margin-left: 22em;
     display: block;
+    @include for-mobile-only{
+        width: 70vw;
+        height: auto;
+    }
 }
 
 /* SECTION 5 : Kontakt */
@@ -697,6 +713,8 @@ footer{
     padding: 5em 8em;
     background-color: $back-color;
     box-shadow: $shadow;
+}
+p.leistungCopy, p.leistungCopy2{
 }
 #serviceExtra{
     background-color: #fff;
