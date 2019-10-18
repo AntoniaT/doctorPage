@@ -52,7 +52,7 @@ const leistungen = [
     {
         id: 9,
         title: 'Karpaltunnelsyndrom (CTS)',
-        copy: 'Durch die Kompression sowie Schrumpfung des Ligamentum carpi transversum kommt es zu Schmerzen in den Fingern. Typischerweise nimmt die Sensibilität ab und Beschwerden treten auf, welche zur Belastung im täglichen Leben werden. Einen Knopf zu öffnen wird immer schwieriger und auch Schmerzattacken in der Nacht sind keine Seltenheit. Durch den Einsatz einer Ruhigstellungsschiene ist selten eine Besserung der Symptome zu erzielen, eine Operation bringt eine Heilung.  Als Basisdiagnostik vermisst der Neurologe die Nervenleitgeschwindigkeit , diese Untersuchung sichert die Diagnose neben dem klinischen Bild..',
+        copy: 'Durch die Kompression sowie Schrumpfung des Ligamentum carpi transversum kommt es zu Schmerzen in den Fingern. Typischerweise nimmt die Sensibilität ab und Beschwerden treten auf, welche zur Belastung im täglichen Leben werden. Einen Knopf zu öffnen wird immer schwieriger und auch Schmerzattacken in der Nacht sind keine Seltenheit. Durch den Einsatz einer Ruhigstellungsschiene ist selten eine Besserung der Symptome zu erzielen, eine Operation bringt eine Heilung.  Als Basisdiagnostik vermisst der Neurologe die Nervenleitgeschwindigkeit , diese Untersuchung sichert die Diagnose neben dem klinischen Bild.',
         copy2: 'Schnellender Finger/Schnappfinger/Ringbandstenose. Sollte es zu einer Verengung des Ringbandes A1 gekommen sein, bleibt Ihr Finger sozusagen hängen und kann nur mit manueller Hilfe wieder durchbewegt werden. Durch einen Eingriff in Lokalanästhesie kann das Band gespalten und der Finger wieder ohne Probleme durchbewegt werden.'
     },
     {

@@ -301,7 +301,6 @@ footer {
 }
 #leistungen h2 {
   color: #465960;
-  padding: 40px 0px 0px 0px;
 }
 #leistungen .leistungenBtn {
   padding: 8px 20px;
@@ -342,7 +341,7 @@ footer {
 }
 #leistungen .serviceBox2 {
   background-color: #F4F4F4;
-  padding: 6em 2em 2em 2em;
+  padding: 6em 4em 2em 2em;
   display: flex;
   width: 60vw;
   text-align: left;
@@ -418,7 +417,7 @@ footer {
   display: flex;
   background-color: #F4F4F4;
   width: 90vw;
-  height: 600px;
+  height: 850px;
 }
 #ueberMich h2 {
   margin-top: 2em;
@@ -438,7 +437,7 @@ footer {
 }
 #ueberMich img {
   z-index: 3;
-  margin-top: 4em;
+  margin-top: 8em;
   width: 35vw;
   height: auto;
   justify-self: flex-start;
@@ -479,7 +478,8 @@ footer {
   height: 600px;
   position: absolute;
   right: 0;
-  top: 12em;
+  top: 2em;
+  bottom: 4em;
   z-index: -1;
 }
 @media (max-width: 599px) {
@@ -580,6 +580,7 @@ footer {
 
 /* SECTION 5 : Kontakt */
 #kontakt {
+  margin-top: 8em;
   padding: 5em 1em;
   background-color: #F4F4F4;
   text-align: center;
@@ -591,6 +592,10 @@ footer {
 }
 #kontakt h2 {
   color: #62C2CE;
+  margin-bottom: 2em;
+}
+#kontakt p {
+  font-size: 1.3em;
 }
 
 /* SECTION 6 : Anfahrt und Öffnungszeiten */
