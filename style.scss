@@ -40,10 +40,10 @@ $secBtn: 1em;
     @media (max-width: 599px) { @content; }
   }
   @mixin for-tablet-portrait {
-    @media (min-width: 600px) { @content; }
+    @media only screen and (min-width: 600px) and (max-width: 800px) { @content; }
   }
   @mixin for-tablet-landscape {
-    @media only screen and (min-width: 900px) and (max-width: 1150) { @content; }
+    @media only screen and (min-width: 600px) and (max-width: 1150px) { @content; }
   }
   @mixin for-desktop {
     @media (min-width: 1200px) { @content; }
@@ -62,7 +62,7 @@ $secBtn: 1em;
   }
 html, body{
     width: 100vw;
-    overflow-x: hidden;
+ //   overflow-x: hidden;
 }
 body{
     margin: auto 0;
@@ -74,7 +74,7 @@ body{
 a{
     text-decoration: none;
     color: $primary-font-color;
-    font-size: 1.5em;
+    font-size: 1.2em;
     position: relative;
     padding: 8px 0px;
     @include for-tablet-landscape{
@@ -378,6 +378,14 @@ footer{
                 width: 70vw;
             }
         }
+        @include for-tablet-landscape{
+            display: block;
+            padding: 2em;
+            width: 50vw;
+            li{
+                display: block;
+            }
+        }
     
     }
 }
@@ -453,6 +461,9 @@ footer{
         width: 200px;
         height: auto;
         padding: 0em 3em;
+        @include for-mobile-only{
+            padding: 1em;
+        }
     }
     .stefanImg{
         z-index: 3;
@@ -460,6 +471,12 @@ footer{
         width: 35vw;
         height: auto;
         justify-self: flex-start;
+        @include for-mobile-only{
+            width: 70vw;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
     }
 
     @include for-tablet-portrait{
@@ -525,15 +542,18 @@ footer{
         height: 200px;
         @include for-mobile-only{
             display: block;
-            width: 70vw;
+            width: 300px;
             margin-top: 5em;
+            margin: auto;
         }
         .ordiDetailsCont{
          justify-self: flex-start;
          width: 350px;
          @include for-mobile-only{
-             padding: 2em;
+             padding: 1em;
              margin: 0;
+             width: 300px;
+             display: block;
          }
             h2{
                 margin: 1em;
@@ -541,6 +561,7 @@ footer{
             p{
                 margin: 1em;
                 color: $primary-font-color;
+                white-space: pre-line;
             }
         }
         .ordiCardImg{
@@ -617,6 +638,8 @@ footer{
     position: relative;
     @include for-mobile-only{
         margin-bottom: 50px;
+        padding: 20px;
+
     }
     h2{
         color: $back-color;
@@ -656,8 +679,9 @@ footer{
             width: 700px;
             padding: 1.5em;
             @include for-mobile-only{
-                width: auto;
-                margin: 0;
+                width: 250px;
+                margin: auto;
+                display: block;
             }
         }
         .anfahrtText{
@@ -701,6 +725,7 @@ footer{
     padding: 6px 20px;
     color: $primary-color;
     font-size: $ctaSize;
+    background-color: transparent;
 }
 .backBtn:hover{
     background-color: $primary-color;
@@ -739,6 +764,16 @@ footer{
     padding: 5em 8em;
     background-color: $back-color;
     box-shadow: $shadow;
+    @include for-mobile-only{
+        width: 80vw;
+        padding: 1.5em;
+        margin: auto;
+        display: block;
+    }
+    @include for-tablet-portrait{
+        padding: 3em;
+        display: block;
+    }
 }
 p.leistungCopy, p.leistungCopy2{
 }

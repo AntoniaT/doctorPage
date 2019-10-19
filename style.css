@@ -10,7 +10,6 @@
 /* mixin function for box shadows */
 html, body {
   width: 100vw;
-  overflow-x: hidden;
 }
 
 body {
@@ -23,11 +22,11 @@ body {
 a {
   text-decoration: none;
   color: #808D9C;
-  font-size: 1.5em;
+  font-size: 1.2em;
   position: relative;
   padding: 8px 0px;
 }
-@media only screen and (min-width: 900px) and (max-width: 1150) {
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
   a {
     font-size: 1.2em;
   }
@@ -110,12 +109,12 @@ h2 {
     display: none;
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1150) {
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
   .main-nav {
     font-size: 1.1em;
   }
 }
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
   .main-nav {
     font-size: 1em;
   }
@@ -250,7 +249,7 @@ footer {
   padding: 2em;
   text-align: center;
 }
-@media only screen and (min-width: 900px) and (max-width: 1150) {
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
   footer {
     display: flex;
     justify-content: space-around;
@@ -281,13 +280,13 @@ footer .impressumLink:hover {
   width: 220px;
   height: auto;
 }
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
   #footerLogo {
     width: 250px;
     height: auto;
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1150) {
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
   #footerLogo {
     margin-top: 15px;
     width: 250px;
@@ -335,7 +334,7 @@ footer .impressumLink:hover {
     height: auto;
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1150) {
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
   #leistungen {
     display: flex;
     flex-direction: row;
@@ -381,6 +380,16 @@ footer .impressumLink:hover {
     width: 70vw;
   }
 }
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+  #leistungen .serviceBox2 {
+    display: block;
+    padding: 2em;
+    width: 50vw;
+  }
+  #leistungen .serviceBox2 li {
+    display: block;
+  }
+}
 
 /* SECTION 2 : Meine Werte */
 #werte {
@@ -398,13 +407,13 @@ footer .impressumLink:hover {
   padding: 10px 40px 80px 40px;
   justify-content: center;
 }
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
   #werte .valueCont {
     display: flex;
     flex-direction: row;
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1150) {
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
   #werte .valueCont {
     display: flex;
     flex-direction: row;
@@ -459,12 +468,25 @@ footer .impressumLink:hover {
   height: auto;
   padding: 0em 3em;
 }
+@media (max-width: 599px) {
+  #ueberMich .signImg {
+    padding: 1em;
+  }
+}
 #ueberMich .stefanImg {
   z-index: 3;
   margin-top: 8em;
   width: 35vw;
   height: auto;
   justify-self: flex-start;
+}
+@media (max-width: 599px) {
+  #ueberMich .stefanImg {
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
 }
 @media (max-width: 599px) {
   #ueberMich img {
@@ -529,8 +551,9 @@ footer .impressumLink:hover {
 @media (max-width: 599px) {
   .ordiCont {
     display: block;
-    width: 70vw;
+    width: 300px;
     margin-top: 5em;
+    margin: auto;
   }
 }
 .ordiCont .ordiDetailsCont {
@@ -539,8 +562,10 @@ footer .impressumLink:hover {
 }
 @media (max-width: 599px) {
   .ordiCont .ordiDetailsCont {
-    padding: 2em;
+    padding: 1em;
     margin: 0;
+    width: 300px;
+    display: block;
   }
 }
 .ordiCont .ordiDetailsCont h2 {
@@ -549,6 +574,7 @@ footer .impressumLink:hover {
 .ordiCont .ordiDetailsCont p {
   margin: 1em;
   color: #808D9C;
+  white-space: pre-line;
 }
 .ordiCont .ordiCardImg {
   justify-self: flex-end;
@@ -632,6 +658,7 @@ footer .impressumLink:hover {
 @media (max-width: 599px) {
   #anfahrt {
     margin-bottom: 50px;
+    padding: 20px;
   }
 }
 #anfahrt h2 {
@@ -677,8 +704,9 @@ footer .impressumLink:hover {
 }
 @media (max-width: 599px) {
   #anfahrt .anfahrt-modal .anfahrtDetailsCont {
-    width: auto;
-    margin: 0;
+    width: 250px;
+    margin: auto;
+    display: block;
   }
 }
 #anfahrt .anfahrt-modal .anfahrtText {
@@ -724,6 +752,7 @@ footer .impressumLink:hover {
   padding: 6px 20px;
   color: #62C2CE;
   font-size: 1.2em;
+  background-color: transparent;
 }
 
 .backBtn:hover {
@@ -767,6 +796,20 @@ footer .impressumLink:hover {
   padding: 5em 8em;
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 599px) {
+  .leistungSingleCont {
+    width: 80vw;
+    padding: 1.5em;
+    margin: auto;
+    display: block;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .leistungSingleCont {
+    padding: 3em;
+    display: block;
+  }
 }
 
 #serviceExtra {
