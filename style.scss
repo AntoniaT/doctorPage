@@ -43,7 +43,7 @@ $secBtn: 1em;
     @media (min-width: 600px) { @content; }
   }
   @mixin for-tablet-landscape {
-    @media (min-width: 900px) { @content; }
+    @media only screen and (min-width: 900px) and (max-width: 1150) { @content; }
   }
   @mixin for-desktop {
     @media (min-width: 1200px) { @content; }
@@ -77,6 +77,9 @@ a{
     font-size: 1.5em;
     position: relative;
     padding: 8px 0px;
+    @include for-tablet-landscape{
+        font-size: 1.2em;
+    }
 }
 p{
     font-size: 1.2em;
@@ -147,6 +150,9 @@ h2{
     align-items: center;
     @include for-mobile-only{
         display: none;
+    }
+    @include for-tablet-landscape{
+        font-size: 1.1em;
     }
     @include for-tablet-portrait{
         font-size: 1em;
@@ -416,7 +422,7 @@ footer{
         display: flex;
         background-color: $grey-back-color;
         width: 90vw;
-        height: 850px;
+        height: 1000px;
     }
     h2{
         margin-top: 2em;
@@ -426,7 +432,7 @@ footer{
     }
     p{
         width: 40vw;
-        padding: 2em 3em;
+        padding: 2em 3em 1em 3em;
     }
     @include for-mobile-only{
         p{
@@ -434,7 +440,13 @@ footer{
             padding: 1em;
         }
     }
-    img{
+    .signImg{
+        z-index: 3;
+        width: 200px;
+        height: auto;
+        padding: 0em 3em;
+    }
+    .stefanImg{
         z-index: 3;
         margin-top: 8em;
         width: 35vw;

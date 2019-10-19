@@ -27,6 +27,11 @@ a {
   position: relative;
   padding: 8px 0px;
 }
+@media only screen and (min-width: 900px) and (max-width: 1150) {
+  a {
+    font-size: 1.2em;
+  }
+}
 
 p {
   font-size: 1.2em;
@@ -103,6 +108,11 @@ h2 {
 @media (max-width: 599px) {
   .main-nav {
     display: none;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1150) {
+  .main-nav {
+    font-size: 1.1em;
   }
 }
 @media (min-width: 600px) {
@@ -240,7 +250,7 @@ footer {
   padding: 2em;
   text-align: center;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) and (max-width: 1150) {
   footer {
     display: flex;
     justify-content: space-around;
@@ -269,7 +279,7 @@ footer {
     height: auto;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) and (max-width: 1150) {
   #footerLogo {
     margin-top: 15px;
     width: 250px;
@@ -317,7 +327,7 @@ footer {
     height: auto;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) and (max-width: 1150) {
   #leistungen {
     display: flex;
     flex-direction: row;
@@ -386,7 +396,7 @@ footer {
     flex-direction: row;
   }
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) and (max-width: 1150) {
   #werte .valueCont {
     display: flex;
     flex-direction: row;
@@ -417,7 +427,7 @@ footer {
   display: flex;
   background-color: #F4F4F4;
   width: 90vw;
-  height: 850px;
+  height: 1000px;
 }
 #ueberMich h2 {
   margin-top: 2em;
@@ -427,7 +437,7 @@ footer {
 }
 #ueberMich p {
   width: 40vw;
-  padding: 2em 3em;
+  padding: 2em 3em 1em 3em;
 }
 @media (max-width: 599px) {
   #ueberMich p {
@@ -435,7 +445,13 @@ footer {
     padding: 1em;
   }
 }
-#ueberMich img {
+#ueberMich .signImg {
+  z-index: 3;
+  width: 200px;
+  height: auto;
+  padding: 0em 3em;
+}
+#ueberMich .stefanImg {
   z-index: 3;
   margin-top: 8em;
   width: 35vw;
