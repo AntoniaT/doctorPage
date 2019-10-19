@@ -268,6 +268,14 @@ footer {
     justify-content: space-around;
   }
 }
+footer .impressumLink {
+  color: #fff;
+  font-size: 20px;
+  transition: 0.4s;
+}
+footer .impressumLink:hover {
+  color: #808D9C;
+}
 
 #footerLogo {
   width: 220px;
@@ -419,7 +427,7 @@ footer {
 #ueberMich {
   margin-top: 5em;
   background-color: #fff;
-  padding-top: 50px;
+  padding-top: 100px;
   position: relative;
   margin-bottom: 5em;
 }
@@ -616,8 +624,9 @@ footer {
 
 /* SECTION 6 : Anfahrt und Öffnungszeiten */
 #anfahrt {
+  margin-top: 1em;
   margin-bottom: 200px;
-  padding: 50px;
+  padding: 100px;
   position: relative;
 }
 @media (max-width: 599px) {
@@ -772,6 +781,18 @@ footer {
 
 .blue {
   background-color: #465960;
+}
+
+#impressum {
+  margin-top: 6em;
+}
+#impressum div {
+  padding: 2em 4em;
+  background-color: #F4F4F4;
+}
+#impressum a {
+  font-size: 20px;
+  color: #62C2CE;
 }
 
 /*# sourceMappingURL=style.css.map */
