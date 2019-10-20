@@ -62,10 +62,10 @@ $secBtn: 1em;
   }
 html, body{
     max-width: 100%;
- //   overflow-x: hidden;
+//    overflow-x: hidden;
 }
 body{
-    margin: auto 0;
+    margin: 0;
     font-family: $main-font;
     color: $primary-font-color;
     scroll-behavior: smooth;
@@ -465,7 +465,8 @@ footer{
     .valueCont{
         display: flex;
         flex-direction: row;
-        padding: 10px 40px 80px 40px;
+        
+        padding: 50px 40px 80px 40px;
         justify-content: center;
         @include for-tablet-portrait{
             display: flex;
@@ -515,7 +516,10 @@ footer{
     @include for-mobile-only{
         margin-top: 0em;
         p{
-            width: 80vw;
+          width: 70vw;
+          padding: 2em 1em 1em 1em;
+          margin-left: 2em;
+          display: block;
         }
     }
     .signImg{
@@ -540,13 +544,6 @@ footer{
             display: block;
         }
     }
-
-    @include for-tablet-portrait{
-
-    }
-    @include for-tablet-landscape{
-     
-    }
     @include for-mobile-only{
         img{
             display: block;
@@ -556,8 +553,10 @@ footer{
         }
         .greyCont{
             background-color: $back-color;
-            display: block;
+            display: flex;
+            flex-direction: column;
             height: auto;
+            margin: 0;
         }
     }
 
@@ -569,9 +568,10 @@ footer{
     padding: 50px;
     position: relative;
     @include for-mobile-only{
+        background-color: $secondary-color;
         padding-top: 2em;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 .ordiSection{
@@ -580,7 +580,7 @@ footer{
 }
     .blueCont{
         background-color: $secondary-color;
-        width: 60vw;
+        width: 100vw;
         height: 600px;
         position: absolute;
         right: 0;
@@ -616,8 +616,9 @@ footer{
          @include for-mobile-only{
              padding: 1em;
              margin: 0;
-             width: 300px;
+             width: 270px;
              display: block;
+             margin-left: 0;
          }
             h2{
                 margin: 1em;
@@ -636,6 +637,8 @@ footer{
             @include for-mobile-only{
                 width: 250px;
                 height: auto;
+                margin: 1em;
+                display: block;
             }
         }
     }
@@ -647,7 +650,8 @@ footer{
         z-index: 3;
         @include for-mobile-only{
             display: block;
-            margin: 0;
+            margin-top: 12em;
+            margin-left: 0em;
         }
         img{
             height: 200px;
@@ -658,6 +662,7 @@ footer{
                 margin: 0;
                 width: 250px;
                 height: auto;
+                margin-bottom: 1em;
             }
         }
     }
@@ -690,6 +695,9 @@ footer{
     p{
         font-size: 1.3em;
     }
+    @include for-mobile-only{
+        height: auto;
+    }
 
 }
 
@@ -701,9 +709,10 @@ footer{
     padding: 100px;
     position: relative;
     @include for-mobile-only{
-        margin-bottom: 50px;
-        padding: 20px;
-
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 20px 0 0 0;
+        background-color:$secondary-color;
     }
     h2{
         color: $back-color;
@@ -718,7 +727,7 @@ footer{
         height: 400px;
         box-shadow: $shadow;
         margin-top: 7em;
-        margin-left: 6em;
+        margin-left: 2em;
         iframe{
             width: 500px;
             height: 400px;
@@ -728,12 +737,11 @@ footer{
             width: 80vw;
             height: auto;
             margin-top: 6em;
-            margin-left: 0;
             .mapsCont{
                 margin: auto;
                 display: block;
                 iframe{
-                    width: 350px;
+                    width: 300px;
                     height: 400px;
                 }
             }
@@ -745,10 +753,9 @@ footer{
         }
         .anfahrtDetailsCont{
             width: 700px;
-            padding: 1.5em;
+            padding: 1.5em 0;
             @include for-mobile-only{
-                width: 250px;
-                margin: auto;
+                width: 300px;
                 display: block;
             }
         }
@@ -758,14 +765,14 @@ footer{
     }
     .blueCont2{
         background-color: $secondary-color;
-        width: 60vw;
+        width: 100vw;
         height: 600px;
         position: absolute;
         left: 0;
         z-index: -1; 
         margin-bottom: 4em; 
         @include for-mobile-only{
-            width: 100vw;
+            display: none;
         }
     }
 }

@@ -116,4 +116,6 @@ const leistungen = [
     }
 ];
 
+const werte = "Ein enges Vertrauensverhältnis<br> zwischen meinen PatientInnen und mir ist mir besonders wichtig";
+
  export default leistungen;
