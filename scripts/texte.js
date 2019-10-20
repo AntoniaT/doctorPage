@@ -15,7 +15,7 @@ const leistungen = [
     },
     {
         id: 3,
-        title: 'Mammachirurgie / Senologie / Brustkrebs / männliche Gynäkomastie',
+        title: 'Mammachirurgie, Senologie, Brustkrebs und männliche Gynäkomastie',
         copy: 'Brustkrebs ist die häufigste bösartige Erkrankung der Frau. Die chirurgische Therapie stellt einen essentiellen Pfeiler der multiprofessionellen Therapie im Kampf gegen den Brustkrebs dar. Der Einsatz modernster Techniken in der Rekonstruktion sowie der onkoplastischen Rekonstruktion ermöglicht die onkologische Sicherheit mit sehr guten kosmetischen Ergebnissen zu kombinieren.',
         copy2: 'Sowohl gutartige Veränderungen der Brustdrüse wie Fibroadenome, eine männliche Gynäkomastie, als auch bösartigen Veränderungen sind gut therapierbar.'
     },
@@ -33,7 +33,7 @@ const leistungen = [
     },
     {
         id: 6,
-        title: 'Narbenbruch / Bauchwandhernie',
+        title: 'Narbenbruch, Bauchwandhernie',
         copy: 'Nach operativen Eingriffen entstehen Narben in der Bauchdecke welche eine Schwachstelle darstellen können. Durch zu frühe Vollbelastung, Infektionen oder Zuckerkrankheit kann die Entstehung eines Narbenbruches begünstigt werden. Durch das Einbringen eines Kunststoffnetzes kann die Bauchdecke wiederhergestellt - und die oft schmerzhaften Veränderungen der Bauchdecke geheilt werden.',
         copy2: 'Basierend auf dem klinischen Bild erfolgt die Therapie.'
     },
@@ -45,7 +45,7 @@ const leistungen = [
     },
     {
         id: 8,
-        title: 'Erkrankungen der Schilddrüse / Nebenschilddrüse',
+        title: 'Erkrankungen der Schilddrüse und Nebenschilddrüse',
         copy: 'Die Schilddrüse ist als Hormonproduzierendes Organ lebenswichtig, jedoch ist sie vermehrt von pathologischen Veränderungen betroffen. Der klassische „steirische Kropf“ wurde durch die Jodversorgung seltener, jedoch sind Veränderungen wie Überfunktion bei Autonomie (Hyperthyreose) sowie Unterfunktionen mit Kropfentwicklung keine Seltenheit. Nach präoperativer Abklärung verdächtiger Läsionen in der Schilddrüse ist die chirurgische Therapie durch den Einsatz von Neuromonitoring sowie durch den Einsatz von Lupenbrillen sicherer geworden, Komplikationsraten werden dadurch minimiert.',
         copy2: 'Die Nebenschilddrüse kann jedoch zu gesundheitlichen Problemen führen. Durch eine gutartige  Veränderung (Adenom) kann es zu einer Überproduktion von Parathormon führen, dies fördert den Knochenabbau. Das dadurch vermehrt freigesetzte Kalzium im Blut fördert es die Kalkablagerung im Körper bzw die Steinbildung in Nieren, Gallenblase etc.'
     },
@@ -57,24 +57,24 @@ const leistungen = [
     },
     {
         id: 10,
-        title: 'Schnellender Finger / Schnappfinger / Ringbandstenose',
+        title: 'Schnellender Finger, Schnappfinger und Ringbandstenose',
         copy: 'Sollte es zu einer Verengung des Ringbandes A1 gekommen sein, bleibt Ihr Finger sozusagen hängen und kann nur mit manueller Hilfe wieder durchbewegt werden. Durch einen Eingriff in Lokalanästhesie kann das Band gespalten und der Finger wieder ohne Probleme durchbewegt werden.'
     },
     {
         id: 11,
-        title: 'Venen / Krampfadern',
+        title: 'Venen und Krampfadern',
         copy: 'Krampfadern sind ein häufiges Krankheitsbild welches nicht nur zu einem kosmetischen Problem,  sondern auch zur Entstehung von  Thrombosen und Entzündungen mit massiven Beschwerden führen kann.',
         copy2: 'Durch die Phlebographie sowie durch den Einsatz des Gefäßultraschalles können die insuffizienten Venenklappen aufgesucht und durch einen operativen Eingriff behandelt werden.'
     },
     {
         id: 12,
-        title: 'Appendizitis / Blinddarmbeschwerden',
+        title: 'Appendizitis und Blinddarmbeschwerden',
         copy: 'Die Erkrankung des Blinddarms kann gehäuft zu Beschwerden führen. Die akute Blinddarmentzündung wird zum Notfall und sollte so rasch als möglich operiert werden. Keine Seltenheit sind auch immer wiederkehrende leichte Entzündungen welche als eine chronischrezidivierende Appendizitis bezeichnet wird und durch eine elektive Operation geheilt werden kann.',
         copy2: ''
     },
     {
         id: 13,
-        title: 'Darmchirurgie / Rektumchirurgie',
+        title: 'Darmchirurgie und Rektumchirurgie',
         copy: 'Darmkrebs - eine der häufigsten bösartige Erkrankung welche durch eine optimale Betreuung von interdisziplinären Fachdisziplinen (Radiologen/Onkologen/Chirurgen) betreut wird. Die Betreuung onkologischer Fälle benötigt eine Ansprechperson in Fachkreisen auch als „Case Manager“ bezeichnet. Je nach Tumorstadium und Tumorsitz, wird die individuelle Therapie geplant.  Auch der operative Zugang (offene Operation/Knopflochchirurgie) wird mit Ihnen genauestens bei der Therapieplanung besprochen.',
         copy2: ''
     },
@@ -86,7 +86,7 @@ const leistungen = [
     },
     {
         id: 15,
-        title: 'Pilonidalsinus / Steißbeinfistel / Sakraldermoid',
+        title: 'Pilonidalsinus, Steißbeinfistel und Sakraldermoid',
         copy: 'Eine langwierige Erkrankung die in der Gesäßfalte (Rima ani) als Schwellung, Abszeß oder durch einen Porus auffällig wird. Die Therapie ist die chirurgische Entfernung der Fistel und die plastische Deckung des Hautdefekts. Bei einem kleinen Pilonidalsinus ist auch eine ambulante Therapie mittels „Pit Picking“ möglich.',
         copy2: ''
     },
@@ -98,7 +98,7 @@ const leistungen = [
     },
     {
         id: 17,
-        title: 'Enddarmbeschwerden / Hämorrhoiden',
+        title: 'Enddarmbeschwerden und Hämorrhoiden',
         copy: 'Eine häufige Erkrankung über die jedoch selten gesprochen wird.  Nässen, Jucken, Blutungen  sowie Schwellungen im Analbereich sind typische Symptome.  Eine medikamentöse Therapie ist oft nicht ausreichend um eine absolute Beschwerdefreiheit herbeizuführen. Eine operative Behandlung ist bei großen symptomatischen Hämorrhoiden indiziert, bei beginnendem Hämorrhoidalleiden ist auch eine ambulante Therapie mittels Gummibandligatur möglich.',
         copy2: ''
     },
@@ -110,7 +110,7 @@ const leistungen = [
     },
     {
         id: 19,
-        title: 'Fisteln / Abszeße / Perianalvenenthrombose',
+        title: 'Fisteln, Abszeße und Perianalvenenthrombose',
         copy: 'Enddarmbeschwerden die eine chirurgische Therapie benötigen, aber auch ein Symptom einer Darmerkrankung wie bei der Erkrankung Morbus Crohn sein kann. Eine ausführliche Anamnese, klinische Diagnostik und operative Therapie führt zur Beschwerdefreiheit.',
         copy2: ''
     }
