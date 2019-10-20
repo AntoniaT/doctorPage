@@ -22,13 +22,12 @@ body {
 a {
   text-decoration: none;
   color: #808D9C;
-  font-size: 1.2em;
   position: relative;
   padding: 8px 0px;
 }
 @media only screen and (min-width: 600px) and (max-width: 1150px) {
   a {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
@@ -72,14 +71,6 @@ h2 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* .ctaBtn::after{
-    transition: 1s;
-}
-.ctaBtn:hover::after{
-    content: "  >";
-    color: $back-color;
-    transition: width 1s ease 0s, left 1s ease 0s;
-} */
 /* NAV */
 .nav-white {
   transition: top 300ms ease;
@@ -97,7 +88,7 @@ h2 {
 .main-nav {
   display: flex;
   list-style: none;
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 0;
   padding: 20px;
   height: 60px;
@@ -116,7 +107,7 @@ h2 {
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
   .main-nav {
-    font-size: 1em;
+    display: none;
   }
 }
 
@@ -135,6 +126,11 @@ nav img {
   margin-top: 10px;
   width: 360px;
 }
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+  nav img {
+    width: 300px;
+  }
+}
 
 .main-nav li {
   padding: 20px;
@@ -148,6 +144,31 @@ nav img {
 /* MOBILE NAV */
 .sidenav {
   display: none;
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s ease-out;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .sidenav .contactNavBtn {
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    display: block;
+  }
+  .sidenav .contactNavBtn:hover {
+    color: #fff;
+  }
 }
 @media (max-width: 599px) {
   .sidenav {
@@ -170,11 +191,23 @@ nav img {
     margin: auto;
     display: block;
   }
+  .sidenav .contactNavBtn:hover {
+    color: #fff;
+  }
 }
 .sidenav img {
   width: 50px;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #808D9C;
+    display: block;
+    transition: 0.3s;
+  }
+}
 @media (max-width: 599px) {
   .sidenav a {
     text-decoration: none;
@@ -189,6 +222,15 @@ nav img {
   color: #62C2CE;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+}
 @media (max-width: 599px) {
   .sidenav .closebtn {
     position: absolute;
@@ -202,9 +244,17 @@ nav img {
 .openBtn {
   display: none;
 }
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .openBtn {
+    padding-left: 20px;
+    display: block;
+    height: 60px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+}
 @media (max-width: 599px) {
   .openBtn {
-    background-color: #fff;
     padding-left: 20px;
     display: block;
     height: 60px;
@@ -346,10 +396,11 @@ footer .impressumLink:hover {
     height: auto;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1150px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
   #leistungen {
-    display: flex;
-    flex-direction: row;
+    display: block;
+    margin-bottom: 0;
+    height: 100%;
   }
 }
 #leistungen li {
@@ -373,6 +424,7 @@ footer .impressumLink:hover {
   padding: 6em 4em 2em 2em;
   display: flex;
   width: 60vw;
+  height: auto;
   text-align: left;
 }
 #leistungen .serviceBox2 img {
@@ -382,11 +434,19 @@ footer .impressumLink:hover {
 #leistungen .serviceBox2 h3 {
   color: #465960;
 }
+#leistungen .serviceBox2 li {
+  font-size: 1em;
+  word-wrap: break-word;
+}
+#leistungen .serviceBox2 a:hover {
+  color: #62C2CE;
+}
 @media (max-width: 599px) {
   #leistungen .serviceBox2 {
     display: block;
     padding: 2em;
     width: auto;
+    height: auto;
   }
   #leistungen .serviceBox2 div {
     width: 70vw;
@@ -396,10 +456,12 @@ footer .impressumLink:hover {
   #leistungen .serviceBox2 {
     display: block;
     padding: 2em;
-    width: 50vw;
+    width: 100vw;
+    min-height: auto;
   }
   #leistungen .serviceBox2 li {
     display: block;
+    font-size: 0.8em;
   }
 }
 
@@ -456,7 +518,7 @@ footer .impressumLink:hover {
   display: flex;
   background-color: #F4F4F4;
   width: 90vw;
-  height: 1000px;
+  min-height: 1020px;
 }
 #ueberMich h2 {
   margin-top: 2em;
@@ -469,9 +531,11 @@ footer .impressumLink:hover {
   padding: 2em 3em 1em 3em;
 }
 @media (max-width: 599px) {
+  #ueberMich {
+    margin-top: 0em;
+  }
   #ueberMich p {
     width: 80vw;
-    padding: 1em;
   }
 }
 #ueberMich .signImg {
@@ -523,6 +587,8 @@ footer .impressumLink:hover {
 @media (max-width: 599px) {
   #ordination {
     padding-top: 2em;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -705,7 +771,7 @@ footer .impressumLink:hover {
     display: block;
   }
   #anfahrt .anfahrt-modal .mapsCont iframe {
-    width: 250px;
+    width: 350px;
     height: 400px;
   }
 }
@@ -799,6 +865,20 @@ footer .impressumLink:hover {
   }
 }
 
+.leistungCopy, .leistungCopy2, .leistungCopy3 {
+  font-size: 1.2em;
+}
+@media (max-width: 599px) {
+  .leistungCopy, .leistungCopy2, .leistungCopy3 {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+  .leistungCopy, .leistungCopy2, .leistungCopy3 {
+    font-size: 1em;
+  }
+}
+
 #parent {
   margin-top: 6em;
 }
@@ -847,6 +927,58 @@ footer .impressumLink:hover {
   #serviceExtra {
     width: auto;
     padding: 2em 3em;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+  #serviceExtra {
+    width: auto;
+    min-height: auto;
+  }
+}
+
+.serviceExtra2 {
+  background-color: #F4F4F4;
+  padding: 6em 4em 2em 2em;
+  display: flex;
+  width: 60vw;
+  min-height: 520px;
+  text-align: left;
+}
+.serviceExtra2 img {
+  width: 50px;
+  height: auto;
+}
+.serviceExtra2 h3 {
+  color: #465960;
+}
+.serviceExtra2 li {
+  font-size: 0.9em;
+  word-wrap: break-word;
+}
+.serviceExtra2 a:hover {
+  color: #62C2CE;
+}
+@media (max-width: 599px) {
+  .serviceExtra2 {
+    display: block;
+    padding: 2em;
+    width: auto;
+    height: auto;
+  }
+  .serviceExtra2 div {
+    width: 70vw;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+  .serviceExtra2 {
+    display: block;
+    padding: 2em;
+    width: 100vw;
+    min-height: 750px;
+  }
+  .serviceExtra2 li {
+    display: block;
+    font-size: 0.8em;
   }
 }
 

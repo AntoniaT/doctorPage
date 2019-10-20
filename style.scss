@@ -74,11 +74,10 @@ body{
 a{
     text-decoration: none;
     color: $primary-font-color;
-    font-size: 1.2em;
     position: relative;
     padding: 8px 0px;
     @include for-tablet-landscape{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 p{
@@ -119,14 +118,7 @@ h2{
     border: $ctaBorder;
     box-shadow: $shadow;
 }
-/* .ctaBtn::after{
-    transition: 1s;
-}
-.ctaBtn:hover::after{
-    content: "  >";
-    color: $back-color;
-    transition: width 1s ease 0s, left 1s ease 0s;
-} */
+
 /* NAV */
 .nav-white{
     transition: top 300ms ease;
@@ -142,7 +134,7 @@ h2{
 .main-nav{
     display: flex;
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 0;
     padding: 20px;
     height: 60px;
@@ -155,7 +147,7 @@ h2{
         font-size: 1.1em;
     }
     @include for-tablet-portrait{
-        font-size: 1em;
+        display: none;
     }
 }
 .contactNavBtn{
@@ -170,6 +162,9 @@ h2{
 nav img{
     margin-top: 10px;
     width: 360px;
+    @include for-tablet-landscape{
+        width: 300px;
+    }
 }
 .main-nav li{
     padding: 20px;
@@ -181,6 +176,29 @@ nav img{
 /* MOBILE NAV */
 .sidenav{
     display: none;
+    @include for-tablet-portrait{
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        background-color: $back-color;
+        overflow-x: hidden;
+        transition: 0.5s ease-out;
+        padding-top: 60px;
+        text-align:center;
+        .contactNavBtn{
+            text-align: center;
+            width: 100px;
+            margin: auto;
+            display: block;
+        } 
+        .contactNavBtn:hover{
+            color: $back-color;
+        }
+    }
     @include for-mobile-only{
         display: block;
         height: 100%;
@@ -200,12 +218,22 @@ nav img{
             margin: auto;
             display: block;
         }
+        .contactNavBtn:hover{
+            color: $back-color;
+        }
     }
     img{
         width: 50px;
     }
 }
 .sidenav a{
+    @include for-tablet-portrait{
+        text-decoration: none;
+        font-size: 25px;
+        color: $primary-font-color;
+        display: block;
+        transition: 0.3s;
+    }
     @include for-mobile-only{
         text-decoration: none;
         font-size: 25px;
@@ -218,6 +246,13 @@ nav img{
     color: $primary-color;
 }
 .sidenav .closebtn {
+    @include for-tablet-portrait{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 60px;
+        margin-left: 50px;
+    }
     @include for-mobile-only{
         position: absolute;
         top: 0;
@@ -228,8 +263,14 @@ nav img{
 }
 .openBtn{
     display: none;
+    @include for-tablet-portrait{
+        padding-left: 20px;
+        display: block;
+        height: 60px;
+        font-size: 40px;
+        cursor: pointer; 
+    }
     @include for-mobile-only{
-        background-color: $back-color;
         padding-left: 20px;
         display: block;
         height: 60px;
@@ -348,9 +389,10 @@ footer{
         display: block;
         height: auto;
     }
-    @include for-tablet-landscape{
-        display: flex;
-        flex-direction: row;
+    @include for-tablet-portrait{
+        display: block;
+        margin-bottom: 0;
+        height: 100%;
     }
     li{
         list-style: none;
@@ -372,6 +414,7 @@ footer{
         padding: 6em 4em 2em 2em;
         display: flex;
         width: 60vw;
+        height: auto;
         text-align: left;
          img{
           width: 50px;
@@ -380,10 +423,18 @@ footer{
         h3{
           color: $secondary-color;
         }
+        li{
+            font-size: 1em;
+            word-wrap: break-word;
+        }
+        a:hover{
+            color: $primary-color;
+        }
         @include for-mobile-only{
             display: block;
             padding: 2em;
             width: auto;
+            height: auto;
             div{
                 width: 70vw;
             }
@@ -391,12 +442,13 @@ footer{
         @include for-tablet-landscape{
             display: block;
             padding: 2em;
-            width: 50vw;
+            width: 100vw;
+            min-height: auto;
             li{
                 display: block;
+                font-size: .8em;
             }
         }
-    
     }
 }
 /* SECTION 2 : Meine Werte */
@@ -448,7 +500,7 @@ footer{
         display: flex;
         background-color: $grey-back-color;
         width: 90vw;
-        height: 1000px;
+        min-height: 1020px;
     }
     h2{
         margin-top: 2em;
@@ -461,9 +513,9 @@ footer{
         padding: 2em 3em 1em 3em;
     }
     @include for-mobile-only{
+        margin-top: 0em;
         p{
             width: 80vw;
-            padding: 1em;
         }
     }
     .signImg{
@@ -518,6 +570,8 @@ footer{
     position: relative;
     @include for-mobile-only{
         padding-top: 2em;
+        display: flex;
+        flex-direction: row;
     }
 }
 .ordiSection{
@@ -679,7 +733,7 @@ footer{
                 margin: auto;
                 display: block;
                 iframe{
-                    width: 250px;
+                    width: 350px;
                     height: 400px;
                 }
             }
@@ -761,6 +815,15 @@ footer{
         width: 60vw;
     }
 }
+.leistungCopy, .leistungCopy2, .leistungCopy3{
+    font-size: 1.2em;
+    @include for-mobile-only{
+    font-size: 1em;
+    }
+    @include for-tablet-landscape{
+    font-size: 1em;
+    }
+}
 #parent{
     margin-top: 6em;
 }
@@ -773,6 +836,7 @@ footer{
         padding: 1.5em;
     }
 }
+
 .leistungSingleCont{
     width: 60vw;
     height: auto;
@@ -791,8 +855,6 @@ footer{
         display: block;
     }
 }
-p.leistungCopy, p.leistungCopy2{
-}
 #serviceExtra{
     background-color: #fff;
     width: 40vw;
@@ -800,6 +862,51 @@ p.leistungCopy, p.leistungCopy2{
     @include for-mobile-only{
         width: auto;
         padding: 2em 3em;
+    }
+    @include for-tablet-landscape{
+        width: auto;
+        min-height: auto;
+    }
+}
+.serviceExtra2{
+    background-color: $grey-back-color;
+    padding: 6em 4em 2em 2em;
+    display: flex;
+    width: 60vw;
+    min-height: 520px;
+    text-align: left;
+     img{
+      width: 50px;
+      height: auto;
+    }
+    h3{
+      color: $secondary-color;
+    }
+    li{
+        font-size: .9em;
+        word-wrap: break-word;
+    }
+    a:hover{
+        color: $primary-color;
+    }
+    @include for-mobile-only{
+        display: block;
+        padding: 2em;
+        width: auto;
+        height: auto;
+        div{
+            width: 70vw;
+        }
+    }
+    @include for-tablet-landscape{
+        display: block;
+        padding: 2em;
+        width: 100vw;
+        min-height: 750px;
+        li{
+            display: block;
+            font-size: .8em;
+        }
     }
 }
 // ADD A WHITE CLASS FOR THE TEMPLATE

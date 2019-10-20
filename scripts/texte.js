@@ -86,32 +86,32 @@ const leistungen = [
     },
     {
         id: 15,
-        title: 'Enddarmbeschwerden / Hämorrhoiden',
-        copy: 'Eine häufige Erkrankung über die jedoch selten gesprochen wird.  Nässen, Jucken, Blutungen  sowie Schwellungen im Analbereich sind typische Symptome.  Eine medikamentöse Therapie ist oft nicht ausreichend um eine absolute Beschwerdefreiheit herbeizuführen. Eine operative Behandlung ist bei großen symptomatischen Hämorrhoiden indiziert, bei beginnendem Hämorrhoidalleiden ist auch eine ambulante Therapie mittels Gummibandligatur möglich.',
-        copy2: ''
-    },
-    {
-        id: 16,
-        title: 'Akute / chronische Analfissur',
-        copy: '..diese schmerzhafte Erkrankung kann akut mittels Salbentherapie therapiert werden. Erst bei einem chronischen Stadium ist eine operative Therapie benötigt.',
-        copy2: ''
-    },
-    {
-        id: 17,
-        title: 'Fisteln / Abszeße / Perianalvenenthrombose',
-        copy: 'Enddarmbeschwerden die eine chirurgische Therapie benötigen, aber auch ein Symptom einer Darmerkrankung wie bei der Erkrankung Morbus Crohn sein kann. Eine ausführliche Anamnese, klinische Diagnostik und operative Therapie führt zur Beschwerdefreiheit.',
-        copy2: ''
-    },
-    {
-        id: 18,
         title: 'Pilonidalsinus / Steißbeinfistel / Sakraldermoid',
         copy: 'Eine langwierige Erkrankung die in der Gesäßfalte (Rima ani) als Schwellung, Abszeß oder durch einen Porus auffällig wird. Die Therapie ist die chirurgische Entfernung der Fistel und die plastische Deckung des Hautdefekts. Bei einem kleinen Pilonidalsinus ist auch eine ambulante Therapie mittels „Pit Picking“ möglich.',
         copy2: ''
     },
     {
-        id: 19,
-        title: 'Talggeschwulst(Atherome), Fettgewebsgeschwulst (Lipome), Geschwulste(Granulome)',
+        id: 16,
+        title: 'Geschwulste (Atherome / Lipome)',
         copy: 'Sind gutartige Weichteiltumore welche je nach Größe meist im ambulanten Setting entfernt werden können. Durch die entsprechende chirurgische Therapie ist ein optimales kosmetisches Ergebnis möglich.',
+        copy2: ''
+    },
+    {
+        id: 17,
+        title: 'Enddarmbeschwerden / Hämorrhoiden',
+        copy: 'Eine häufige Erkrankung über die jedoch selten gesprochen wird.  Nässen, Jucken, Blutungen  sowie Schwellungen im Analbereich sind typische Symptome.  Eine medikamentöse Therapie ist oft nicht ausreichend um eine absolute Beschwerdefreiheit herbeizuführen. Eine operative Behandlung ist bei großen symptomatischen Hämorrhoiden indiziert, bei beginnendem Hämorrhoidalleiden ist auch eine ambulante Therapie mittels Gummibandligatur möglich.',
+        copy2: ''
+    },
+    {
+        id: 18,
+        title: 'Akute und chronische Analfissur',
+        copy: 'Diese schmerzhafte Erkrankung kann akut mittels Salbentherapie therapiert werden. Erst bei einem chronischen Stadium ist eine operative Therapie benötigt.',
+        copy2: ''
+    },
+    {
+        id: 19,
+        title: 'Fisteln / Abszeße / Perianalvenenthrombose',
+        copy: 'Enddarmbeschwerden die eine chirurgische Therapie benötigen, aber auch ein Symptom einer Darmerkrankung wie bei der Erkrankung Morbus Crohn sein kann. Eine ausführliche Anamnese, klinische Diagnostik und operative Therapie führt zur Beschwerdefreiheit.',
         copy2: ''
     }
 ];

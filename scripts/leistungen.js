@@ -1,17 +1,10 @@
 'use strict'
 import leistungen from './texte.js';
 
-/* const newArray= leistungen.map(element => element.title);
-console.log(newArray); */
-/* leistungContent.forEach((element, i) =>{
-        console.log(leistungen[i].title)
-}); */
 const myTemplate = document.querySelector("#myTemplate").content;
 
 function showLeistung(leistungen){
 leistungen.forEach(leistung => {
-    console.log(leistungen); 
-    console.log(leistung.copy);
     
     const clone = myTemplate.cloneNode(true);
     const parent = document.querySelector('#parent');
@@ -21,10 +14,8 @@ leistungen.forEach(leistung => {
     clone.querySelector(".leistungTitle").textContent = leistung.title;
     clone.querySelector(".leistungCopy").textContent = leistung.copy;
     clone.querySelector(".leistungCopy2").textContent = leistung.copy2;
+    clone.querySelector(".leistungSection").id = leistung.id;
     if(number % 2 === 0){
-        console.log("this is even!");
-        console.log(leistung.id)
-        console.log(background);
         clone.querySelector(".leistungSection").classList.add("grey");
     }
     parent.appendChild(clone);
@@ -34,3 +25,17 @@ leistungen.forEach(leistung => {
 
 showLeistung(leistungen);
 
+// EVENTS FOR BACK BUTTONS and TERMIN VEREINBAREN BUTTONS
+
+document.querySelectorAll('.backBtn').forEach(item =>{
+    item.addEventListener('click', event => {
+        console.log('click');
+        window.location.assign('leistungen.html#leistungenStart');
+    })
+})
+document.querySelectorAll('.terminBtn').forEach(item =>{
+    item.addEventListener('click', event => {
+        console.log('click');
+        window.location.assign('index.html#kontakt');
+    })
+})
