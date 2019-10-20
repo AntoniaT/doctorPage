@@ -61,7 +61,7 @@ $secBtn: 1em;
     box-shadow: $x, $y, $blur, $c;
   }
 html, body{
-    width: 100vw;
+    max-width: 100%;
  //   overflow-x: hidden;
 }
 body{
@@ -157,15 +157,15 @@ h2{
     @include for-tablet-portrait{
         font-size: 1em;
     }
-    .contactNavBtn{
-        border: 2px solid $primary-color;
-        padding: 5px 20px;
-        color: $primary-color;
-    }
-    .contactNavBtn:hover{
-        background-color: $primary-color;
-        color: $back-color;
-    }
+}
+.contactNavBtn{
+    border: 2px solid $primary-color;
+    padding: 5px 20px;
+    color: $primary-color;
+}
+.contactNavBtn:hover{
+    background-color: $primary-color;
+    color: $back-color;
 }
 nav img{
     margin-top: 10px;
@@ -178,6 +178,7 @@ nav img{
 .push{
     margin-right: auto;
 }
+/* MOBILE NAV */
 .sidenav{
     display: none;
     @include for-mobile-only{
@@ -193,11 +194,19 @@ nav img{
         transition: 0.5s ease-out;
         padding-top: 60px;
         text-align:center;
+        .contactNavBtn{
+            text-align: center;
+            width: 100px;
+            margin: auto;
+            display: block;
+        }
+    }
+    img{
+        width: 50px;
     }
 }
 .sidenav a{
     @include for-mobile-only{
-        padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
         color: $primary-font-color;
@@ -220,7 +229,8 @@ nav img{
 .openBtn{
     display: none;
     @include for-mobile-only{
-        margin-left: 20px;
+        background-color: $back-color;
+        padding-left: 20px;
         display: block;
         height: 60px;
         font-size: 40px;
@@ -655,6 +665,10 @@ footer{
         box-shadow: $shadow;
         margin-top: 7em;
         margin-left: 6em;
+        iframe{
+            width: 500px;
+            height: 400px;
+        }
         @include for-mobile-only{
             display: block;
             width: 80vw;
@@ -688,17 +702,6 @@ footer{
             font-size: 1em;
         }
     }
-    .hoursCont{
-        background-color: $light-back-color;
-        width: 300px;
-        height: 100px;
-        display: block;
-        margin: auto;
-        padding: .5em;
-        text-align: center;
-        z-index: 3;
-        box-shadow: $shadow;
-    }
     .blueCont2{
         background-color: $secondary-color;
         width: 60vw;
@@ -726,6 +729,9 @@ footer{
     color: $primary-color;
     font-size: $ctaSize;
     background-color: transparent;
+    @include for-mobile-only{
+        margin-bottom: .5em;
+    }
 }
 .backBtn:hover{
     background-color: $primary-color;
@@ -743,11 +749,17 @@ footer{
 }
 .leistungTitle{
     font-size: 1.5em;
+    @include for-mobile-only{
+        word-wrap: break-word;
+    }
 }
 
 .leistungImg{
     width: 30vw;
     height: auto;
+    @include for-mobile-only{
+        width: 60vw;
+    }
 }
 #parent{
     margin-top: 6em;
@@ -756,6 +768,10 @@ footer{
     background-color: $secondary-color;
     padding: 8em 2em;
     height: 600px;
+    @include for-mobile-only{
+        height: auto;
+        padding: 1.5em;
+    }
 }
 .leistungSingleCont{
     width: 60vw;
@@ -765,7 +781,7 @@ footer{
     background-color: $back-color;
     box-shadow: $shadow;
     @include for-mobile-only{
-        width: 80vw;
+        width: 70vw;
         padding: 1.5em;
         margin: auto;
         display: block;
@@ -781,6 +797,10 @@ p.leistungCopy, p.leistungCopy2{
     background-color: #fff;
     width: 40vw;
     padding: 4em 3em;
+    @include for-mobile-only{
+        width: auto;
+        padding: 2em 3em;
+    }
 }
 // ADD A WHITE CLASS FOR THE TEMPLATE
 

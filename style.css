@@ -9,7 +9,7 @@
 /* breakpoints for MEDIA QUERIES */
 /* mixin function for box shadows */
 html, body {
-  width: 100vw;
+  max-width: 100%;
 }
 
 body {
@@ -119,12 +119,14 @@ h2 {
     font-size: 1em;
   }
 }
-.main-nav .contactNavBtn {
+
+.contactNavBtn {
   border: 2px solid #62C2CE;
   padding: 5px 20px;
   color: #62C2CE;
 }
-.main-nav .contactNavBtn:hover {
+
+.contactNavBtn:hover {
   background-color: #62C2CE;
   color: #fff;
 }
@@ -143,6 +145,7 @@ nav img {
   margin-right: auto;
 }
 
+/* MOBILE NAV */
 .sidenav {
   display: none;
 }
@@ -161,11 +164,19 @@ nav img {
     padding-top: 60px;
     text-align: center;
   }
+  .sidenav .contactNavBtn {
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    display: block;
+  }
+}
+.sidenav img {
+  width: 50px;
 }
 
 @media (max-width: 599px) {
   .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #808D9C;
@@ -193,7 +204,8 @@ nav img {
 }
 @media (max-width: 599px) {
   .openBtn {
-    margin-left: 20px;
+    background-color: #fff;
+    padding-left: 20px;
     display: block;
     height: 60px;
     font-size: 40px;
@@ -676,6 +688,10 @@ footer .impressumLink:hover {
   margin-top: 7em;
   margin-left: 6em;
 }
+#anfahrt .anfahrt-modal iframe {
+  width: 500px;
+  height: 400px;
+}
 @media (max-width: 599px) {
   #anfahrt .anfahrt-modal {
     display: block;
@@ -712,17 +728,6 @@ footer .impressumLink:hover {
 #anfahrt .anfahrt-modal .anfahrtText {
   font-size: 1em;
 }
-#anfahrt .hoursCont {
-  background-color: #F4F4F4;
-  width: 300px;
-  height: 100px;
-  display: block;
-  margin: auto;
-  padding: 0.5em;
-  text-align: center;
-  z-index: 3;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
 #anfahrt .blueCont2 {
   background-color: #465960;
   width: 60vw;
@@ -754,6 +759,11 @@ footer .impressumLink:hover {
   font-size: 1.2em;
   background-color: transparent;
 }
+@media (max-width: 599px) {
+  .backBtn {
+    margin-bottom: 0.5em;
+  }
+}
 
 .backBtn:hover {
   background-color: #62C2CE;
@@ -773,10 +783,20 @@ footer .impressumLink:hover {
 .leistungTitle {
   font-size: 1.5em;
 }
+@media (max-width: 599px) {
+  .leistungTitle {
+    word-wrap: break-word;
+  }
+}
 
 .leistungImg {
   width: 30vw;
   height: auto;
+}
+@media (max-width: 599px) {
+  .leistungImg {
+    width: 60vw;
+  }
 }
 
 #parent {
@@ -787,6 +807,12 @@ footer .impressumLink:hover {
   background-color: #465960;
   padding: 8em 2em;
   height: 600px;
+}
+@media (max-width: 599px) {
+  .leistungSection {
+    height: auto;
+    padding: 1.5em;
+  }
 }
 
 .leistungSingleCont {
@@ -799,7 +825,7 @@ footer .impressumLink:hover {
 }
 @media (max-width: 599px) {
   .leistungSingleCont {
-    width: 80vw;
+    width: 70vw;
     padding: 1.5em;
     margin: auto;
     display: block;
@@ -816,6 +842,12 @@ footer .impressumLink:hover {
   background-color: #fff;
   width: 40vw;
   padding: 4em 3em;
+}
+@media (max-width: 599px) {
+  #serviceExtra {
+    width: auto;
+    padding: 2em 3em;
+  }
 }
 
 .grey {
