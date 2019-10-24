@@ -1,7 +1,7 @@
 'use strict'
 import leistungen from './texte.js';
 
-const myTemplate = document.querySelector("#myTemplate").content;
+/* const myTemplate = document.querySelector("#myTemplate").content;
 
 function showLeistung(leistungen){
 leistungen.forEach(leistung => {
@@ -23,7 +23,7 @@ leistungen.forEach(leistung => {
     });
 }
 
-showLeistung(leistungen);
+showLeistung(leistungen); */
 
 // EVENTS FOR BACK BUTTONS and TERMIN VEREINBAREN BUTTONS
 

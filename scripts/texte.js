@@ -58,7 +58,8 @@ const leistungen = [
     {
         id: 10,
         title: 'Schnellender Finger, Schnappfinger und Ringbandstenose',
-        copy: 'Sollte es zu einer Verengung des Ringbandes A1 gekommen sein, bleibt Ihr Finger sozusagen hängen und kann nur mit manueller Hilfe wieder durchbewegt werden. Durch einen Eingriff in Lokalanästhesie kann das Band gespalten und der Finger wieder ohne Probleme durchbewegt werden.'
+        copy: 'Sollte es zu einer Verengung des Ringbandes A1 gekommen sein, bleibt Ihr Finger sozusagen hängen und kann nur mit manueller Hilfe wieder durchbewegt werden. Durch einen Eingriff in Lokalanästhesie kann das Band gespalten und der Finger wieder ohne Probleme durchbewegt werden.',
+        copy2: ''
     },
     {
         id: 11,

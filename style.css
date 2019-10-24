@@ -372,6 +372,7 @@ footer .impressumLink:hover {
 
 /* SECTION 1 : Meine Leistungen */
 #leistungen {
+  overflow: hidden;
   display: flex;
   text-align: center;
   margin-bottom: -1.5em;
@@ -401,6 +402,13 @@ footer .impressumLink:hover {
     display: block;
     margin-bottom: 0;
     height: 100%;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+  #leistungen {
+    height: 100%;
+    overflow: hidden;
   }
 }
 #leistungen li {
