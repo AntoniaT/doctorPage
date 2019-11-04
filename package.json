@@ -1,0 +1,20 @@
+{
+  "name": "stefan_uranitsch",
+  "version": "1.0.0",
+  "description": "dr stefan uranitsch homepage",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntoniaT/doctorPage.git"
+  },
+  "author": "Antonia Hackenberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntoniaT/doctorPage/issues"
+  },
+  "homepage": "https://github.com/AntoniaT/doctorPage#readme"
+}

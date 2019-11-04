@@ -1,4 +1,3 @@
-'use strict'
 
 // EVENT FOR CONTACT BUTTONS
 
