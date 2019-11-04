@@ -1,5 +1,5 @@
 "use strict";
-
+/* 
 var _texte = _interopRequireDefault(require("./texte.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -25,7 +25,7 @@ function showLeistung(leistungen) {
   });
 }
 
-showLeistung(_texte.default); // EVENTS FOR BACK BUTTONS and TERMIN VEREINBAREN BUTTONS
+showLeistung(_texte.default); */ // EVENTS FOR BACK BUTTONS and TERMIN VEREINBAREN BUTTONS
 
 document.querySelectorAll('.backBtn').forEach(function (item) {
   item.addEventListener('click', function (event) {
