@@ -75,7 +75,7 @@ a{
     text-decoration: none;
     color: $primary-font-color;
     position: relative;
-    padding: 8px 0px;
+    padding: 8px 0;
     @include for-tablet-landscape{
         font-size: 1em;
     }
@@ -132,6 +132,8 @@ h2{
     box-shadow: $shadow;
 }
 .main-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     font-size: 1.4em;
@@ -293,7 +295,6 @@ nav img{
 
 .cover-modal{
     text-align: center;
-    box-shadow: $shadow;
     background-color: $back-color;
     width: 40vw;
     height: auto;
@@ -342,7 +343,7 @@ footer{
         color: $primary-font-color;
     }
 }
-#footerLogo{
+.footerLogo{
     width: 220px;
     height: auto;
     @include for-tablet-portrait{
@@ -416,6 +417,11 @@ footer{
             padding: 1em 1em 3em 1em;
         }
     }
+    .leistungenHdg{
+        color: $secondary-color;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
     .serviceBox2{
         background-color: $grey-back-color;
         padding: 6em 4em 2em 2em;
@@ -426,9 +432,6 @@ footer{
          img{
           width: 50px;
           height: auto;
-        }
-        h3{
-          color: $secondary-color;
         }
         li{
             font-size: 1em;
@@ -817,6 +820,7 @@ footer{
 }
 .leistungTitle{
     font-size: 1.5em;
+    text-transform: capitalize;
     @include for-mobile-only{
         word-wrap: break-word;
     }
