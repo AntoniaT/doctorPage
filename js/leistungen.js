@@ -29,13 +29,13 @@ showLeistung(_texte.default); */ // EVENTS FOR BACK BUTTONS and TERMIN VEREINBAR
 
 document.querySelectorAll('.backBtn').forEach(function (item) {
   item.addEventListener('click', function (event) {
-    console.log('click');
+    console.log('click back');
     window.location.assign('leistungen.html#leistungenStart');
   });
 });
 document.querySelectorAll('.terminBtn').forEach(function (item) {
   item.addEventListener('click', function (event) {
-    console.log('click');
+    console.log('click to contact');
     window.location.assign('index.html#kontakt');
   });
 });
