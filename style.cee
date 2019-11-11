@@ -373,8 +373,6 @@ footer .impressumLink:hover {
 /* SECTION 1 : Meine Leistungen */
 #leistungen {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-bottom: -1.5em;
@@ -913,7 +911,6 @@ footer .impressumLink:hover {
 }
 
 .leistungSection {
-  margin-top: 4em;
   background-color: #465960;
   padding: 8em 2em;
   height: 600px;
@@ -1032,4 +1029,4 @@ footer .impressumLink:hover {
   color: #62C2CE;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cee.map */
