@@ -378,7 +378,6 @@ footer .impressumLink:hover {
   display: flex;
   text-align: center;
   margin-bottom: -1.5em;
-  height: 90vh;
   background-color: #fff;
 }
 #leistungen h2 {
@@ -913,7 +912,7 @@ footer .impressumLink:hover {
 }
 
 .leistungSection {
-  margin-top: 4em;
+  margin-top: 8em;
   background-color: #465960;
   padding: 8em 2em;
   height: 600px;
