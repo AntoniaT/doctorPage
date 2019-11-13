@@ -27,12 +27,12 @@ function showLeistung(leistungen) {
 
 showLeistung(_texte.default); */ // EVENTS FOR BACK BUTTONS and TERMIN VEREINBAREN BUTTONS
 
-document.querySelectorAll('.backBtn').forEach(function (item) {
+/* document.querySelectorAll('.backBtn').forEach(function (item) {
   item.addEventListener('click', function (event) {
     console.log('click back');
     window.location.assign('leistungen.html#leistungenStart');
   });
-});
+}); */
 document.querySelectorAll('.terminBtn').forEach(function (item) {
   item.addEventListener('click', function (event) {
     console.log('click to contact');
