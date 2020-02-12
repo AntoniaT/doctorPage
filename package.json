@@ -4,9 +4,10 @@
   "description": "dr stefan uranitsch homepage",
   "main": "",
   "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
   },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AntoniaT/doctorPage.git"
